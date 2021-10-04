@@ -204,10 +204,10 @@
             </form>
 
             <form class="sorting-buttons">
-                <span class="visualy-hidden">Отсортировать от меньшего к большему</span>
-                <input type="radio" value="up" name="sorting-buttons">
-                <span class="visualy-hidden">Отсортировать от большего к меньшему</span>
-                <input type="radio" value="down" name="sorting-buttons">
+                <label class="visualy-hidden" for="sorting-button-up">Отсортировать от меньшего к большему</label>
+                <input id="sorting-button-up" type="radio" value="up" name="sorting-buttons">
+                <label class="visualy-hidden" for="sorting-button-up">Отсортировать от большего к меньшему</label>
+                <input id="sorting-button-down" type="radio" value="down" name="sorting-buttons">
             </form>
         </aside>
 
@@ -216,40 +216,40 @@
 
             <ul>
                 <li>
-                    <a href="#">
                     <div class="product-card">
+                      <a href="#">
                             <img src="img/product-1.jpg" width="360" height="360" alt="Любительская селфи-палка">
                             <h3>Любительская селфи-палка</h3>
                         <span class="product-cart-price">500 ₽</span>
+                      </a>
                     </div>
-                    </a>
                 </li>
                 <li>
-                    <a href="#">
                         <div class="product-card">
+                          <a href="#">
                                 <img src="img/product-2.jpg" width="360" height="360" alt="Профессиональная селфи-палка">
                                 <h3>Профессиональная селфи-палка </h3>
                             <span class="product-cart-price">1500 ₽</span>
+                          </a>
                         </div>
-                    </a>
                 </li>
                 <li>
-                    <a href="#">
                         <div class="product-card">
+                          <a href="#">
                                 <img src="img/product-3.jpg" width="360" height="360" alt="Непотопляемая селфи-палка">
                                 <h3>Непотопляемая селфи-палка</h3>
                             <span class="product-cart-price">2500 ₽</span>
+                          </a>
                         </div>
-                    </a>
                 </li>
                 <li>
-                    <a href="#">
                         <div class="product-card is-new">
+                          <a href="#">
                                 <img src="img/product-4.jpg" width="360" height="360" alt="Селфи-палка в форме руки">
                                 <h3>Селфи-палка «Следуй за мной»</h3>
                             <span class="product-cart-price">4900 ₽</span>
+                          </a>
                         </div>
-                    </a>
                 </li>
             </ul>
          </section>
@@ -301,72 +301,65 @@
         </section>
     </main>
 
-    <footer>
-      <section class="footer-about-us">
-          <h2 class="visualy-hidden">Наши контакты:</h2>
+      <footer>
+        <h2 class="visualy-hidden">Наши контакты.</h2>
 
-          <a href="index.html">
-              <img src="img/logo.svg" width="145" height="36" alt="Логотип магазина Девайс">
-          </a>
+        <a href="index.html">
+            <img src="img/logo.svg" width="145" height="36" alt="Логотип магазина Девайс.">
+        </a>
 
-          <address>Санкт-Петербург, набережная
-                  реки Карповки, 5, литера П.
-          </address>
+        <address>Санкт-Петербург, набережная
+                реки Карповки, 5, литера П.
+        </address>
 
-          <a href="tel:+78128121212">
-              Тел.: +7 (812) 812-12-12
-          </a>
-      </section>
+        <h2 class="visualy-hidden">Дополнительная информация.</h2>
 
-      <section class="footer-navigation">
-          <h2 class="visualy-hidden">Дополнительная информация</h2>
-
-          <nav class="navigation-footer">
-          <ul class="footer-navigation-list">
-              <li class="footer-navigation-item">
-                <a href="#">
-                  Доставка
+        <nav class="navigation-footer">
+        <ul class="footer-navigation-list">
+            <li class="footer-navigation-item">
+              <a href="#">
+                Доставка
+              </a>
+            </li>
+            <li class="footer-navigation-item">
+              <a href="#">
+                Гарантия
                 </a>
-              </li>
-              <li class="footer-navigation-item">
-                <a href="#">
-                  Гарантия
-                  </a>
-              </li>
-              <li class="footer-navigation-item">
-                <a href="#">
-                  Контакты
+            </li>
+            <li class="footer-navigation-item">
+              <a href="#">
+                Контакты
+              </a>
+            </li>
+        </ul>
+      </nav>
+
+    <div class="social-media">
+        <h2 class="visualy-hidden">Мы в социальных сетях</h2>
+        <ul class="social-media-list">
+            <li>
+                <a href="https://www.facebook.com/htmlacademy" target="_blank">
+                    <img src="" alt="Ссылка на нашу страницу в Facebook.">
                 </a>
-              </li>
-          </ul>
-        </nav>
-      </section>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/htmlacademy" target="_blank">
+                    <img src="" alt="Ссылка на нашу страницу в Instagram.">
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/htmlacademy_ru" target="_blank">
+                    <img src="" alt="Ссылка на нашу страницу в Twitter.">
+                </a>
+            </li>
+        </ul>
+      </div>
 
-      <section class="social-media">
-          <h2 class="visualy-hidden">Мы в социальных сетях</h2>
+    <a href="tel:+78128121212">
+      Тел.: +7 (812) 812-12-12
+    </a>
 
-          <ul class="social-media-list">
-              <li>
-                  <a href="https://www.facebook.com/htmlacademy" target="_blank">
-                      <img src="" alt="Ссылка на нашу страницу в Facebook">
-                  </a>
-              </li>
-              <li>
-                  <a href="https://www.instagram.com/htmlacademy" target="_blank">
-                      <img src="" alt="Ссылка на нашу страницу в Instagram">
-                  </a>
-              </li>
-              <li>
-                  <a href="https://twitter.com/htmlacademy_ru" target="_blank">
-                      <img src="" alt="Ссылка на нашу страницу в Twitter">
-                  </a>
-              </li>
-          </ul>
-      </section>
-
-      <section class="htmlacademy">
-        <img src="img/htmlacademy.svg" width="115" height="33" alt="Разработано в "HtmlAcademy">
-      </section>
-    </footer>
+      <img src="img/htmlacademy.svg" width="115" height="33" alt="Разработано в «HtmlAcademy».">
+  </footer>
   </body>
 </html>
