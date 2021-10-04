@@ -11,28 +11,27 @@
         </a>
 
         <nav class="navigation">
-          <ul class="navigation-list navigation-user">
-            <li class="navigation-item">
-                <a href="#">
+          <div class="navigation-user">
+            <form>
+                <label>
+                  <input type="search" placeholder="Поиск по сайту">
                     Поиск по сайту
-                </a>
-            </li>
-            <li class="navigation-item">
+                </label>
+            </form>
+
                 <a href="#">
                     Войти
                 </a>
-            </li>
-            <li class="navigation-item">
+
                 <a href="#">
                     Сравнить
                 </a>
-            </li>
-            <li class="navigation-item">
+
                 <button type="button">
                     Корзина
                 </button>
-            </li>
-        </ul>
+              </div>
+
 
         <ul class="navigation-list">
                 <li class="navigation-item">
@@ -67,11 +66,11 @@
             <h2 class="visualy-hidden">Наши предложения.</h2>
 
             <article class="slide selected">
-                <img src="img/slider-1.jpg" width="560" height="560" alt="Квадрокоптер">
+                <img src="img/slider-1.jpg" width="560" height="560" alt="Квадрокоптер.">
                 <div class="slide-info">
-                <strong>
+                <h4>
                   Порхает как бабочка, жалит как пчела!
-                </strong>
+                </h4>
                 <p>
                   Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
                 </p>
@@ -132,39 +131,24 @@
           </div>
 
           <div class="slider-navigation">
-            <button class="slider-button slider-button-prev" type="button">
-              <span class="visualy-hidden">
-                Следующее предложение.
-              </span>
+            <button class="slider-button slider-button-prev" type="button" area-label="Следующее предложение.">
             </button>
 
-            <button class="slider-button slider-button-next" type="button">
-              <span>
-                Предыдущее предложение.
-              </span>
+            <button class="slider-button slider-button-next" type="button" area-label="Предыдущее предложение.">
             </button>
           </div>
 
             <ol class="slider-pagination">
               <li>
-                <button class="slider-dot" type="button">
-                  <span clas="visualy-hidden">
-                    Первое предложение.
-                  </span>
+                <button class="slider-dot" type="button" area-label="Первое предложение.">
                 </button>
               </li>
               <li>
-                <button class="slider-dot" type="button">
-                  <span clas="visualy-hidden">
-                    Второе предложение.
-                  </span>
+                <button class="slider-dot" type="button" area-label="Второе предложение.">
                 </button>
               </li>
               <li>
-                <button class="slider-dot" type="button">
-                  <span clas="visualy-hidden">
-                    Третье предложение.
-                  </span>
+                <button class="slider-dot" type="button" area-label="Третье предложение.">
                 </button>
               </li>
           </ol>
@@ -179,32 +163,32 @@
         <ul>
             <li>
                 <a href="#">
-                    <img src="">Виртуальная реальность
+                  Виртуальная реальность
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="">Моноподы для селфи
+                  Моноподы для селфи
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="">Экшн камеры
+                  Экшн камеры
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="">Фитнес-браслеты
+                  Фитнес-браслеты
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="">Умные часы
+                  Умные часы
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="">Квадрокоптеры
+                  Квадрокоптеры
                 </a>
             </li>
         </ul>
@@ -225,7 +209,6 @@
             <li class="services-item">
               <button class="services-button" type="button">
               Гарантия
-              </a>
             </button>
             <li>
               <button class="services-button" type="button">
@@ -235,7 +218,8 @@
         </ul>
         </nav>
 
-        <div class="services-info">
+        <div class="services-info-all">
+        <div class="services-info selected">
           <h3>Доставка</h3>
                 <p>Мы с удовольствием доставим ваш товар прямо
                     к вашему подъезду совершенно бесплатно! Ведь
@@ -256,6 +240,7 @@
           <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита.
               Выгодные для банка, разумеется.
           </p>
+        </div>
         </div>
         </section>
 
@@ -332,17 +317,14 @@
     </main>
 
     <footer>
-            <h2 class="visualy-hidden">Наши контакты.</h2>
-
             <a href="index.html">
                 <img src="img/logo.svg" width="145" height="36" alt="Логотип магазина Девайс.">
             </a>
 
+            <div class="footer-menu">
             <address>Санкт-Петербург, набережная
                     реки Карповки, 5, литера П.
             </address>
-
-            <h2 class="visualy-hidden">Дополнительная информация.</h2>
 
             <nav class="navigation-footer">
             <ul class="footer-navigation-list">
@@ -362,10 +344,16 @@
                   </a>
                 </li>
             </ul>
-          </nav>
+            </nav>
 
+            <a href="tel:+78128121212">
+              Тел.: +7 (812) 812-12-12
+            </a>
+            </div>
+
+        <div class="footer-links">
         <div class="social-media">
-            <h2 class="visualy-hidden">Мы в социальных сетях</h2>
+            <h2 class="visualy-hidden">Мы в социальных сетях.</h2>
             <ul class="social-media-list">
                 <li>
                     <a href="https://www.facebook.com/htmlacademy" target="_blank">
@@ -385,11 +373,10 @@
             </ul>
           </div>
 
-        <a href="tel:+78128121212">
-          Тел.: +7 (812) 812-12-12
-        </a>
-
-          <img src="img/htmlacademy.svg" width="115" height="33" alt="Разработано в «HtmlAcademy».">
+          <a href="https://htmlacademy.ru/">
+            <img src="img/htmlacademy.svg" width="115" height="33" alt="Разработано в «HtmlAcademy».">
+          </a>
+        </div>
     </footer>
   </body>
 </html>
