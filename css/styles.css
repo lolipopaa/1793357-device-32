@@ -34,7 +34,6 @@ body{
   font-family: Rubik, sans-serif;
   font-size: 18px;
   line-height: 30px;
-  font-weight: 400;
   background-color: #FFFFFF;
   color: #444444;
 }
@@ -53,17 +52,14 @@ body{
   font-family: Raleway, sans-serif;
   line-height: 21px;
   font-weight: 800;
-  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  color: #000000;
+  color: inherit;
 }
 
 .navigation-user-link{
   font-family: Rubik, sans-serif;
   line-height: 19px;
-  font-weight: 400;
-  text-align: center;
   text-decoration: none;
   color: #000000;
 }
@@ -79,17 +75,15 @@ body{
 
 .offers-quality{
   font-size: 36px;
-  font-weight: 400;
   line-height: 30px;
   color: #000000;
 }
 
 .offers-characteristic{
-  font-weight: 400;
   font-size: 16px;
 }
 
-.links{
+.links-and-buttons{
   font-family: Raleway, sans-serif;
   font-weight: 800;
   line-height: 21px;
@@ -111,18 +105,72 @@ body{
   color: #000000;
 }
 
+.vr{
+  background-image: url(../img/icon-vr.svg);
+  background-repeat: no-repeat;
+  width: 97px;
+  height: 55px;
+}
+
+.monopod{
+  background-image: url(../img/icon-monopod.svg);
+  background-repeat: no-repeat;
+  width: 86px;
+  height: 117px;
+}
+
+.actioncamera{
+  background-image: url(../img/icon-actioncamera.svg);
+  background-repeat: no-repeat;
+  width: 71px;
+  height: 87px;
+}
+
+.fitbracelet{
+  background-image: url(../img/icon-fitbracelet.svg);
+  background-repeat: no-repeat;
+  width: 107px;
+  height: 65px;
+}
+
+.smartwatch{
+  background-image: url(../img/icon-smartwatch.svg);
+  background-repeat: no-repeat;
+  width: 56px;
+  height: 98px;
+}
+
+.kvadro{
+  background-image: url(../img/icon-kvadro.svg);
+  background-repeat: no-repeat;
+  width: 132px;
+  height: 69px;
+}
+
 /* Services */
 .services-list{
   list-style-type: none;
 }
 
-.services-button{
-  font-family: Raleway, sans-serif;
-  font-weight: 800;
-  line-height: 21px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #000000;
+.delivery-icon{
+  background-image: url(../img/illustration-delivery.svg);
+  background-repeat: no-repeat;
+  width: 136px;
+  height: 164px;
+}
+
+.warranty-icon{
+  background-image: url(../img/illustration-warranty.svg);
+  background-repeat: no-repeat;
+  width: 171px;
+  height: 195px;
+}
+
+.credit-icon{
+  background-image: url(../img/illustration-credit.svg);
+  background-repeat: no-repeat;
+  width: 156px;
+  height: 188px;
 }
 
 /* Delivery */
@@ -133,6 +181,10 @@ body{
   line-height: 23px;
   text-transform: uppercase;
   color: #000000;
+  background-image: url(../img/icon-delivery-link.svg);
+  background-repeat: no-repeat;
+  width: 47px;
+  height: 31px;
 }
 
 /* About us */
@@ -177,16 +229,6 @@ body{
   list-style-type: none;
 }
 
-.footer-navigation-link{
-  font-family: Raleway, sans-serif;
-  font-weight: 800;
-  line-height: 21px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #FFFFFF;
-}
-
 .footer-tel{
   font-size: 16px;
   font-style: normal;
@@ -209,7 +251,7 @@ body{
 }
 
 /* Filters */
-.filer-headline{
+.filter-headline{
   font-family: Raleway, sans-serif;
   font-size: 16px;
   line-height: 19px;
