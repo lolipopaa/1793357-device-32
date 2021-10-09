@@ -30,7 +30,15 @@
   font-display: swap;
 }
 
+html{
+  height: 100%;
+}
+
 body{
+  margin: 0;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
   font-family: Rubik, sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -42,10 +50,19 @@ body{
 .page-header{
   background-color: #FFE17F;
   color: #000000;
+  width: 1160px;
+}
+
+.navigation{
+  display:flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 .navigation-list{
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .navigation-link{
@@ -62,6 +79,10 @@ body{
   line-height: 19px;
   text-decoration: none;
   color: #000000;
+}
+
+.main-container{
+  flex-grow: 1;
 }
 
 /* Slider */
@@ -83,7 +104,7 @@ body{
   font-size: 16px;
 }
 
-.links-and-buttons{
+.buttons{
   font-family: Raleway, sans-serif;
   font-weight: 800;
   line-height: 21px;
@@ -105,46 +126,76 @@ body{
   color: #000000;
 }
 
-.vr{
+.vr::before{
+  content: "";
+  position: absolute;
   background-image: url(../img/icon-vr.svg);
   background-repeat: no-repeat;
-  width: 97px;
-  height: 55px;
+  background-position: center;
+  background-size: 97px 55px;
+  background-color: #FFE17F;
+  width: 160px;
+  height: 160px;
 }
 
-.monopod{
+.monopod::before{
+  content: "";
+  position: absolute;
   background-image: url(../img/icon-monopod.svg);
   background-repeat: no-repeat;
-  width: 86px;
-  height: 117px;
+  background-position: center;
+  background-size: 86px 117px;
+  background-color: #FFE17F;
+  width: 160px;
+  height: 160px;
 }
 
-.actioncamera{
+.actioncamera::before{
+  content: "";
+  position: absolute;
   background-image: url(../img/icon-actioncamera.svg);
   background-repeat: no-repeat;
-  width: 71px;
-  height: 87px;
+  background-position: center;
+  background-size: 71px 87px;
+  background-color: #FFE17F;
+  width: 160px;
+  height: 160px;
 }
 
-.fitbracelet{
+.fitbracelet::before{
+  content: "";
+  position: absolute;
   background-image: url(../img/icon-fitbracelet.svg);
   background-repeat: no-repeat;
-  width: 107px;
-  height: 65px;
+  background-position: center;
+  background-size: 107px 65px;
+  background-color: #FFE17F;
+  width: 160px;
+  height: 160px;
 }
 
-.smartwatch{
+.smartwatch::before{
+  content: "";
+  position: absolute;
   background-image: url(../img/icon-smartwatch.svg);
   background-repeat: no-repeat;
-  width: 56px;
-  height: 98px;
+  background-position: center;
+  background-size: 56px 98px;
+  background-color: #FFE17F;
+  width: 160px;
+  height: 160px;
 }
 
-.kvadro{
+.kvadro::before{
+  content: "";
+  position: absolute;
   background-image: url(../img/icon-kvadro.svg);
   background-repeat: no-repeat;
-  width: 132px;
-  height: 69px;
+  background-position: center;
+  background-size: 132px 69px;
+  background-color: #FFE17F;
+  width: 160px;
+  height: 160px;
 }
 
 /* Services */
@@ -152,25 +203,25 @@ body{
   list-style-type: none;
 }
 
-.delivery-icon{
+.delivery-icon::after{
+  content: "";
   background-image: url(../img/illustration-delivery.svg);
   background-repeat: no-repeat;
-  width: 136px;
-  height: 164px;
+  background-size: 136px 164px;
 }
 
-.warranty-icon{
+.warranty-icon::after{
+  content: "";
   background-image: url(../img/illustration-warranty.svg);
   background-repeat: no-repeat;
-  width: 171px;
-  height: 195px;
+  background-size: 171px 195px;
 }
 
-.credit-icon{
+.credit-icon::after{
+  content: "";
   background-image: url(../img/illustration-credit.svg);
   background-repeat: no-repeat;
-  width: 156px;
-  height: 188px;
+  background-size: 156px 188px;
 }
 
 /* Delivery */
@@ -181,10 +232,16 @@ body{
   line-height: 23px;
   text-transform: uppercase;
   color: #000000;
+}
+
+.delivery-link::before{
+  content: "";
   background-image: url(../img/icon-delivery-link.svg);
   background-repeat: no-repeat;
-  width: 47px;
-  height: 31px;
+  background-size: 47px 31px;
+  background-color: #FFE17F;
+  width: 125px;
+  height: 100px;
 }
 
 /* About us */
