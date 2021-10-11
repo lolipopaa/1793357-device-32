@@ -51,18 +51,22 @@ body{
   background-color: #FFE17F;
   color: #000000;
   width: 1160px;
+  margin: 0 auto;
+  padding:49px 59px 53px 60px;
+  box-sizing: border-box;
 }
 
 .navigation{
   display:flex;
   flex-direction: column;
-  margin: 0 auto;
 }
 
 .navigation-list{
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .navigation-link{
@@ -74,6 +78,27 @@ body{
   color: inherit;
 }
 
+.navigation-user{
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-form{
+  width: 516px;
+}
+
+.login-link{
+  width: 220px;
+}
+
+.catalog-link{
+  margin-right: 304px;
+}
+
+.contacts-link{
+  margin-left:62px;
+}
+
 .navigation-user-link{
   font-family: Rubik, sans-serif;
   line-height: 19px;
@@ -83,6 +108,11 @@ body{
 
 .main-container{
   flex-grow: 1;
+}
+
+.page-container{
+  width: 1160px;
+  margin: 0 auto;
 }
 
 /* Slider */
@@ -104,6 +134,10 @@ body{
   font-size: 16px;
 }
 
+.slide{
+  display: flex;
+}
+
 .buttons{
   font-family: Raleway, sans-serif;
   font-weight: 800;
@@ -113,9 +147,22 @@ body{
   color: #000000;
 }
 
+.slider-pagination{
+  display: flex;
+}
+
 /* Catalog */
 .catalog-list{
   list-style-type: none;
+  display: flex;
+  width: 1160px;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-item{
+  width: 160px;
 }
 
 .menu-links{
@@ -126,96 +173,87 @@ body{
   color: #000000;
 }
 
+.menu-links::before,
+.delivery-link::before{
+  background-color: #FFE17F;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+}
+
 .vr::before{
   content: "";
-  display: block;
   background-image: url(../img/icon-vr.svg);
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: 97px 55px;
-  background-color: #FFE17F;
   width: 160px;
   height: 160px;
 }
 
 .monopod::before{
   content: "";
-  display: block;
   background-image: url(../img/icon-monopod.svg);
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: 86px 117px;
-  background-color: #FFE17F;
   width: 160px;
   height: 160px;
 }
 
 .actioncamera::before{
   content: "";
-  display: block;
   background-image: url(../img/icon-actioncamera.svg);
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: 71px 87px;
-  background-color: #FFE17F;
   width: 160px;
   height: 160px;
 }
 
 .fitbracelet::before{
   content: "";
-  display: block;
   background-image: url(../img/icon-fitbracelet.svg);
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: 107px 65px;
-  background-color: #FFE17F;
   width: 160px;
   height: 160px;
 }
 
 .smartwatch::before{
   content: "";
-  display: block;
   background-image: url(../img/icon-smartwatch.svg);
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: 56px 98px;
-  background-color: #FFE17F;
   width: 160px;
   height: 160px;
 }
 
 .kvadro::before{
   content: "";
-  display: block;
   background-image: url(../img/icon-kvadro.svg);
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: 132px 69px;
-  background-color: #FFE17F;
   width: 160px;
   height: 160px;
 }
 
 /* Services */
+.services-container{
+  display: flex;
+}
+
 .services-list{
   list-style-type: none;
+  margin: 0 120px 0 0;
+  padding: 0;
+}
+
+.services-icon{
+  display: block;
+  background-repeat: no-repeat;
 }
 
 .delivery-icon::after{
   content: "";
-  display: block;
   background-image: url(../img/illustration-delivery.svg);
-  background-repeat: no-repeat;
   background-size: 136px 164px;
 }
 
 .warranty-icon::after{
   content: "";
-  display: block;
   background-image: url(../img/illustration-warranty.svg);
-  background-repeat: no-repeat;
   background-size: 171px 195px;
 }
 
@@ -228,28 +266,45 @@ body{
 }
 
 /* Delivery */
+.delivery{
+  background-color: #F0F0F0;
+  text-align: center;
+  margin-top: 159px;
+}
+
 .delivery-link{
   font-family: Raleway, sans-serif;
   font-weight: 800;
   font-size: 20px;
   line-height: 23px;
   text-transform: uppercase;
+  text-decoration: none;
   color: #000000;
 }
 
 .delivery-link::before{
   content: "";
   background-image: url(../img/icon-delivery-link.svg);
-  display: block;
-  background-position: center;
-  background-repeat: no-repeat;
   background-size: 47px 31px;
-  background-color: #FFE17F;
   width: 125px;
   height: 100px;
 }
 
 /* About us */
+.info{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 146px;
+}
+
+.about-us{
+  width: 560px;
+}
+
+.contacts{
+  width: 560px;
+}
+
 .contacts-headline{
   font-weight: 700;
   font-size: 24px;
@@ -267,10 +322,22 @@ body{
   font-size: 50px;
   line-height: 50px;
   color: #000000;
+  margin: 0;
+  padding: 0;
 }
 
 .contacts-address{
   font-style: normal;
+}
+
+.subscribe{
+  margin: 162px 0 131px;
+}
+
+.subscribe-container{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
 }
 
 /* Fotter */
@@ -279,16 +346,42 @@ body{
   color: #FFFFFF;
 }
 
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 1160px;
+  padding-top: 60px;
+}
+
+.footer-logo{
+  margin-bottom: 35px;
+}
+
+.footer-menu{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links{
+  display: flex;
+  justify-content: space-between;
+}
+
 .address-footer{
   font-size: 16px;
   line-height: 19px;
   font-style: normal;
   color: #FFFFFF;
+  width: 238px;
 }
 
 .footer-navigation-list,
 .social-media-list{
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-tel{
@@ -299,10 +392,22 @@ body{
 }
 
 /*  --- Catalog. html --- */
+.page-container-catalog{
+  width: 1160px;
+  margin: 0 auto;
+  padding: 37px 0 77px 60px;
+}
+
 .breadcrumbs,
 .product-card-list,
 .pagination-list{
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs{
+  display: flex;
 }
 
 .breadcrumbs-link{
@@ -312,7 +417,21 @@ body{
   color: #000000;
 }
 
+.catalog-container{
+  display: flex;
+  margin-top: 49px;
+}
+
 /* Filters */
+.filter-container{
+  width: 327px;
+}
+
+.catalog-container-right{
+  width: 832px;
+  margin-left: 72px;
+}
+
 .filter-headline{
   font-family: Raleway, sans-serif;
   font-size: 16px;

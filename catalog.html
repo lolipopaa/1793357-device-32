@@ -14,14 +14,14 @@
 
       <nav class="navigation">
         <div class="navigation-user">
-          <form>
+          <form class="search-form">
               <label>
                 <input type="search" placeholder="Поиск по сайту">
                   Поиск по сайту
               </label>
           </form>
 
-              <a class="navigation-user-link" href="#">
+              <a class="navigation-user-link login-link" href="#">
                   Войти
               </a>
 
@@ -35,32 +35,33 @@
             </div>
 
 
-      <ul class="navigation-list">
-              <li class="navigation-item">
-                  <button class="navigation-link" type="button">
-                      Каталог товаров
-                  </button>
-              </li>
-              <li class="navigation-item">
-                  <a class="navigation-link" href="#">
-                      Доставка
-                  </a>
-              </li>
-              <li class="navigation-item">
-                  <a class="navigation-link" href="#">
-                      Гарантия
-                  </a>
-              </li>
-              <li class="navigation-item">
-                  <a class="navigation-link" href="#">
-                      Контакты
-                  </a>
-              </li>
-          </ul>
-      </nav>
+        <ul class="navigation-list">
+                <li class="navigation-item">
+                    <button class="navigation-link catalog-link" type="button">
+                        Каталог товаров
+                    </button>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" href="#">
+                        Доставка
+                    </a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" href="#">
+                        Гарантия
+                    </a>
+                </li>
+                <li class="navigation-item contacts-link">
+                    <a class="navigation-link" href="#">
+                        Контакты
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <main class="main-container">
+      <div class="page-container-catalog">
       <h2 class="headlines">
         Моноподы для селфи
       </h2>
@@ -83,7 +84,8 @@
             </li>
         </ul>
 
-        <section>
+        <div class="catalog-container">
+        <section class="filter-container">
             <h3 class="filer-headline">Фильтр:</h3>
 
              <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -152,7 +154,6 @@
                             </label>
                         </li>
                     </ul>
-
                 </fieldset>
 
                 <fieldset>
@@ -186,6 +187,7 @@
             </button>
         </section>
 
+        <div class="catalog-container-right">
         <aside>
             <h3 class="filer-headline">Сортировка:</h3>
 
@@ -306,72 +308,75 @@
                 </li>
             </ul>
         </nav>
-
         </section>
+      </div>
+    </div>
+  </div>
     </main>
 
     <footer class="page-footer">
-      <a href="index.html">
-          <img src="img/logo-footer.svg" width="145" height="36" alt="Логотип магазина Девайс.">
-      </a>
-
-      <div class="footer-menu">
-      <address class="address-footer">
-        Санкт-Петербург, набережная
-              реки Карповки, 5, литера П.
-      </address>
-
-      <nav class="navigation-footer">
-      <ul class="footer-navigation-list">
-          <li class="footer-navigation-item">
-            <a class="navigation-link" href="#">
-              Доставка
+      <div class="footer-container">
+            <a class="footer-logo" href="index.html">
+                <img src="img/logo-footer.svg" width="145" height="36" alt="Логотип магазина Девайс.">
             </a>
-          </li>
-          <li class="footer-navigation-item">
-            <a class="navigation-link" href="#">
-              Гарантия
-              </a>
-          </li>
-          <li class="footer-navigation-item">
-            <a class="navigation-link" href="#">
-              Контакты
-            </a>
-          </li>
-      </ul>
-      </nav>
 
-      <a class="footer-tel" href="tel:+78128121212">
-        Тел.: +7 (812) 812-12-12
-      </a>
+            <div class="footer-menu">
+            <address class="address-footer">Санкт-Петербург, набережная
+                    реки Карповки, 5, литера П.
+            </address>
+
+            <nav class="navigation-footer">
+            <ul class="footer-navigation-list">
+                <li class="footer-navigation-item">
+                  <a class="navigation-link" href="#">
+                    Доставка
+                  </a>
+                </li>
+                <li class="footer-navigation-item">
+                  <a class="navigation-link" href="#">
+                    Гарантия
+                    </a>
+                </li>
+                <li class="footer-navigation-item">
+                  <a class="navigation-link" href="#">
+                    Контакты
+                  </a>
+                </li>
+            </ul>
+            </nav>
+
+            <a class="footer-tel" href="tel:+78128121212">
+              Тел.: +7 (812) 812-12-12
+            </a>
+            </div>
+
+        <div class="footer-links">
+          <div class="social-media">
+            <h2 class="visualy-hidden">Мы в социальных сетях.</h2>
+            <ul class="social-media-list">
+                <li>
+                    <a href="https://www.facebook.com/htmlacademy" target="_blank">
+                        <img src="img/facebook.svg" width="9" height="18" alt="Ссылка на нашу страницу в Facebook.">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/htmlacademy" target="_blank">
+                        <img src="img/instagram.svg" width="16" height="16" alt="Ссылка на нашу страницу в Instagram.">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/htmlacademy_ru" target="_blank">
+                        <img src="img/twitter.svg" width="16" height="14" alt="Ссылка на нашу страницу в Twitter.">
+                    </a>
+                </li>
+            </ul>
+          </div>
+
+          <a href="https://htmlacademy.ru/">
+            <img src="img/htmlacademy.svg" width="115" height="33" alt="Разработано в «HtmlAcademy».">
+          </a>
+        </div>
       </div>
-
-  <div class="footer-links">
-    <div class="social-media">
-      <h2 class="visualy-hidden">Мы в социальных сетях.</h2>
-      <ul class="social-media-list">
-          <li>
-              <a href="https://www.facebook.com/htmlacademy" target="_blank">
-                  <img src="img/facebook.svg" width="9" height="18" alt="Ссылка на нашу страницу в Facebook.">
-              </a>
-          </li>
-          <li>
-              <a href="https://www.instagram.com/htmlacademy" target="_blank">
-                  <img src="img/instagram.svg" width="16" height="16" alt="Ссылка на нашу страницу в Instagram.">
-              </a>
-          </li>
-          <li>
-              <a href="https://twitter.com/htmlacademy_ru" target="_blank">
-                  <img src="img/twitter.svg" width="16" height="14" alt="Ссылка на нашу страницу в Twitter.">
-              </a>
-          </li>
-      </ul>
-    </div>
-
-    <a href="https://htmlacademy.ru/">
-      <img src="img/htmlacademy.svg" width="115" height="33" alt="Разработано в «HtmlAcademy».">
-    </a>
-  </div>
-</footer>
+    </footer>
   </body>
 </html>
