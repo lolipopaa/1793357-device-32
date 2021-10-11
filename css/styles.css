@@ -128,7 +128,7 @@ body{
 
 .vr::before{
   content: "";
-  position: absolute;
+  display: block;
   background-image: url(../img/icon-vr.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -140,7 +140,7 @@ body{
 
 .monopod::before{
   content: "";
-  position: absolute;
+  display: block;
   background-image: url(../img/icon-monopod.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -152,7 +152,7 @@ body{
 
 .actioncamera::before{
   content: "";
-  position: absolute;
+  display: block;
   background-image: url(../img/icon-actioncamera.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -164,7 +164,7 @@ body{
 
 .fitbracelet::before{
   content: "";
-  position: absolute;
+  display: block;
   background-image: url(../img/icon-fitbracelet.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -176,7 +176,7 @@ body{
 
 .smartwatch::before{
   content: "";
-  position: absolute;
+  display: block;
   background-image: url(../img/icon-smartwatch.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -188,7 +188,7 @@ body{
 
 .kvadro::before{
   content: "";
-  position: absolute;
+  display: block;
   background-image: url(../img/icon-kvadro.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -205,6 +205,7 @@ body{
 
 .delivery-icon::after{
   content: "";
+  display: block;
   background-image: url(../img/illustration-delivery.svg);
   background-repeat: no-repeat;
   background-size: 136px 164px;
@@ -212,6 +213,7 @@ body{
 
 .warranty-icon::after{
   content: "";
+  display: block;
   background-image: url(../img/illustration-warranty.svg);
   background-repeat: no-repeat;
   background-size: 171px 195px;
@@ -219,6 +221,7 @@ body{
 
 .credit-icon::after{
   content: "";
+  display: block;
   background-image: url(../img/illustration-credit.svg);
   background-repeat: no-repeat;
   background-size: 156px 188px;
@@ -237,6 +240,8 @@ body{
 .delivery-link::before{
   content: "";
   background-image: url(../img/icon-delivery-link.svg);
+  display: block;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: 47px 31px;
   background-color: #FFE17F;
