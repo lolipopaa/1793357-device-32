@@ -46,12 +46,15 @@ body{
   color: #444444;
 }
 
+.container{
+  width: 1160px;
+  margin: 0 auto;
+}
+
 /* Header */
 .page-header{
   background-color: #FFE17F;
   color: #000000;
-  width: 1160px;
-  margin: 0 auto;
   padding:49px 59px 53px 60px;
   box-sizing: border-box;
 }
@@ -84,7 +87,7 @@ body{
 }
 
 .search-form{
-  width: 516px;
+  margin-right: auto;
 }
 
 .login-link{
@@ -108,11 +111,6 @@ body{
 
 .main-container{
   flex-grow: 1;
-}
-
-.page-container{
-  width: 1160px;
-  margin: 0 auto;
 }
 
 /* Slider */
@@ -179,13 +177,13 @@ body{
   background-position: center;
   background-repeat: no-repeat;
   display: block;
+  width: 160px;
 }
 
 .vr::before{
   content: "";
   background-image: url(../img/icon-vr.svg);
   background-size: 97px 55px;
-  width: 160px;
   height: 160px;
 }
 
@@ -193,7 +191,6 @@ body{
   content: "";
   background-image: url(../img/icon-monopod.svg);
   background-size: 86px 117px;
-  width: 160px;
   height: 160px;
 }
 
@@ -201,7 +198,6 @@ body{
   content: "";
   background-image: url(../img/icon-actioncamera.svg);
   background-size: 71px 87px;
-  width: 160px;
   height: 160px;
 }
 
@@ -209,7 +205,6 @@ body{
   content: "";
   background-image: url(../img/icon-fitbracelet.svg);
   background-size: 107px 65px;
-  width: 160px;
   height: 160px;
 }
 
@@ -217,7 +212,6 @@ body{
   content: "";
   background-image: url(../img/icon-smartwatch.svg);
   background-size: 56px 98px;
-  width: 160px;
   height: 160px;
 }
 
@@ -225,7 +219,6 @@ body{
   content: "";
   background-image: url(../img/icon-kvadro.svg);
   background-size: 132px 69px;
-  width: 160px;
   height: 160px;
 }
 
@@ -350,8 +343,6 @@ body{
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  margin: 0 auto;
-  width: 1160px;
   padding-top: 60px;
 }
 
@@ -392,9 +383,7 @@ body{
 }
 
 /*  --- Catalog. html --- */
-.page-container-catalog{
-  width: 1160px;
-  margin: 0 auto;
+.page-catalog{
   padding: 37px 0 77px 60px;
 }
 
