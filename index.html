@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <header class="page-header container">
+    <header class="page-header">
         <a href="index.html">
           <img src="img/logo.svg" width="145" height="36" alt="Логотип магазина Девайс.">
         </a>
@@ -24,15 +24,14 @@
                     Войти
                 </a>
 
-                <a class="navigation-user-link" href="#">
+                <a class="navigation-user-link compare-link" href="#">
                     Сравнить
                 </a>
 
-                <button class="navigation-user-link" type="button">
+                <button class="navigation-user-link shopping-cart" type="button">
                     Корзина
                 </button>
               </div>
-
 
         <ul class="navigation-list">
                 <li class="navigation-item">
@@ -45,7 +44,7 @@
                         Доставка
                     </a>
                 </li>
-                <li class="navigation-item">
+                <li class="navigation-item guarantee-link">
                     <a class="navigation-link" href="#">
                         Гарантия
                     </a>
@@ -60,12 +59,11 @@
     </header>
 
     <main class="main-container">
-      <div class="container">
-      <!--  <h1 class="visualy-hidden">Интернет магазин "Device".</h1> -->
+        <h1 class="visually-hidden">Интернет магазин "Device".</h1>
 
         <div class="slider">
           <div class="slider-container">
-          <!--  <h2 class="visualy-hidden">Наши предложения.</h2> -->
+           <h2 class="visually-hidden">Наши предложения.</h2>
 
             <article class="slide selected">
                 <img src="img/slider-1.jpg" width="560" height="560" alt="Квадрокоптер.">
@@ -101,7 +99,7 @@
               <div class="slider-description">
                 <div class="slide-info">
                 <h4 class="slider-tagline">Худеем правильно!</h4>
-                <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+                <p >Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
                 </div>
 
               <a class="buttons" href="#">
@@ -173,7 +171,7 @@
 
 
         <section class="catalog">
-        <!-- <h2 class="visualy-hidden">Каталог.</h2> -->
+         <h2 class="visually-hidden">Каталог.</h2>
 
         <ul class="catalog-list">
             <li class="catalog-item">
@@ -209,8 +207,9 @@
         </ul>
         </section>
 
+        <div class="services-container-background">
         <section class="services">
-        <!-- <h2 class="visualy-hidden">Услуги.</h2> -->
+         <h2 class="visually-hidden">Услуги.</h2>
 
         <div class="services-container">
         <nav class="services-navigation">
@@ -258,6 +257,7 @@
         </div>
         </div>
         </section>
+        </div>
 
         <section class="delivery">
             <a class="delivery-link" href="#">
@@ -267,7 +267,7 @@
 
         <div class="info">
         <section class="about-us">
-            <h2 class="headlines">О нас</h2>
+            <h2 class="headlines headline-info">О нас</h2>
 
             <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
             <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
@@ -290,22 +290,22 @@
         </section>
 
         <section class="contacts">
-            <h2 class="headlines">Контакты</h2>
+            <h2 class="headlines headline-info">Контакты</h2>
 
-            <p>Вы можете забрать товар сами, заехав в наш офис. <br>
+            <p class="contacts-info">Вы можете забрать товар сами, заехав в наш офис. <br>
             Заодно, сможете проверить работоспособность покупки. </p>
 
             <h3 class="contacts-headline">Интернет-магазин "Девайс"</h3>
             <address class="contacts-address">
-                <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-                <a href="tel:+78128121212">
+                <p class="contacts-info">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+                <a class="contacts-info" href="tel:+78128121212">
                     +7 (812) 812-12-12
                 </a>
             </address>
 
             <h3 class="contacts-headline">Время работы</h3>
 
-            <p>пн—пт: с 10:00 до 22:00<br>
+            <p class="working-hours">пн—пт: с 10:00 до 22:00<br>
                 сб—вс: с 10:00 до 19:00</p>
 
             <a class="buttons" href="#">
@@ -314,6 +314,7 @@
             </section>
           </div>
 
+        <div class="subscribe-container-background">
         <section class="subscribe">
           <div class="subscribe-container">
             <h2 class="headlines">Подпишитесь на рассылку</h2>
@@ -331,11 +332,11 @@
             </p>
             </form>
         </section>
-      </div>
+        </div>
     </main>
 
     <footer class="page-footer">
-      <div class="footer-container container">
+      <div class="footer-container">
             <a class="footer-logo" href="index.html">
                 <img src="img/logo-footer.svg" width="145" height="36" alt="Логотип магазина Девайс.">
             </a>
@@ -372,27 +373,27 @@
 
         <div class="footer-links">
           <div class="social-media">
-           <!-- <h2 class="visualy-hidden">Мы в социальных сетях.</h2>  -->
+           <h2 class="visually-hidden">Мы в социальных сетях.</h2>
             <ul class="social-media-list">
                 <li>
-                    <a href="https://www.facebook.com/htmlacademy" target="_blank">
+                    <a href="https://www.facebook.com/htmlacademy" target="_blank">gggggg
                         <img src="img/facebook.svg" width="9" height="18" alt="Ссылка на нашу страницу в Facebook.">
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/htmlacademy" target="_blank">
+                    <a href="https://www.instagram.com/htmlacademy" target="_blank">iiiiii
                         <img src="img/instagram.svg" width="16" height="16" alt="Ссылка на нашу страницу в Instagram.">
                     </a>
                 </li>
                 <li>
-                    <a href="https://twitter.com/htmlacademy_ru" target="_blank">
+                    <a href="https://twitter.com/htmlacademy_ru" target="_blank">tttttt
                         <img src="img/twitter.svg" width="16" height="14" alt="Ссылка на нашу страницу в Twitter.">
                     </a>
                 </li>
             </ul>
           </div>
 
-          <a href="https://htmlacademy.ru/">
+          <a class="htmlacademy-link" href="https://htmlacademy.ru/">
             <img src="img/htmlacademy.svg" width="115" height="33" alt="Разработано в «HtmlAcademy».">
           </a>
         </div>
