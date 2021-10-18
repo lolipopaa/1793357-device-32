@@ -7,7 +7,7 @@
   </head>
 
   <body>
-    <header class="page-header container">
+    <header class="page-header">
       <a href="index.html">
         <img src="img/logo.svg" width="145" height="36" alt="Логотип магазина Девайс.">
       </a>
@@ -25,43 +25,42 @@
                   Войти
               </a>
 
-              <a class="navigation-user-link" href="#">
+              <a class="navigation-user-link compare-link" href="#">
                   Сравнить
               </a>
 
-              <button class="navigation-user-link" type="button">
+              <button class="navigation-user-link shopping-cart" type="button">
                   Корзина
               </button>
             </div>
 
-
-        <ul class="navigation-list">
-                <li class="navigation-item">
-                    <button class="navigation-link catalog-link" type="button">
-                        Каталог товаров
-                    </button>
-                </li>
-                <li class="navigation-item">
-                    <a class="navigation-link" href="#">
-                        Доставка
-                    </a>
-                </li>
-                <li class="navigation-item">
-                    <a class="navigation-link" href="#">
-                        Гарантия
-                    </a>
-                </li>
-                <li class="navigation-item contacts-link">
-                    <a class="navigation-link" href="#">
-                        Контакты
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+      <ul class="navigation-list">
+              <li class="navigation-item">
+                  <button class="navigation-link catalog-link" type="button">
+                      Каталог товаров
+                  </button>
+              </li>
+              <li class="navigation-item">
+                  <a class="navigation-link" href="#">
+                      Доставка
+                  </a>
+              </li>
+              <li class="navigation-item guarantee-link">
+                  <a class="navigation-link" href="#">
+                      Гарантия
+                  </a>
+              </li>
+              <li class="navigation-item contacts-link">
+                  <a class="navigation-link" href="#">
+                      Контакты
+                  </a>
+              </li>
+          </ul>
+      </nav>
+  </header>
 
     <main class="main-container">
-      <div class="page-catalog container">
+      <div class="page-catalog">
       <h2 class="headlines">
         Моноподы для селфи
       </h2>
@@ -86,9 +85,10 @@
 
         <div class="catalog-container">
         <section class="filter-container">
-            <h3 class="filer-headline">Фильтр:</h3>
+            <h3 class="catalog-headline">Фильтр:</h3>
 
-             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+            <div class="filters">
+            <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset>
                     <legend class="filter-legend">
                         Стоимость
@@ -107,7 +107,7 @@
                     </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="color">
                     <legend class="filter-legend">
                         Цвет
                     </legend>
@@ -115,7 +115,7 @@
                     <ul class="filter-list-color">
                         <li>
                             <label>
-                              <!--  <input class="visualy-hidden color-input checked" type="checkbox" name="color[]" value="black" checked> -->
+                               <input class="visually-hidden color-input checked" type="checkbox" name="color[]" value="black" checked>
                                 <span class="filter-items">
                                     Черный
                                 </span>
@@ -123,7 +123,7 @@
                         </li>
                         <li>
                             <label>
-                              <!--  <input class="visualy-hidden color-input checked" type="checkbox"  name="color[]" value="white" checked> -->
+                                <input class="visually-hidden color-input checked" type="checkbox"  name="color[]" value="white" checked>
                                 <span class="filter-items">
                                     Белый
                                 </span>
@@ -131,7 +131,7 @@
                         </li>
                         <li>
                             <label>
-                              <!--  <input class="visualy-hidden color-input" type="checkbox"  name="color[]" value="blue"> -->
+                               <input class="visually-hidden color-input" type="checkbox"  name="color[]" value="blue">
                                 <span class="filter-items">
                                     Синий
                                 </span>
@@ -139,7 +139,7 @@
                         </li>
                         <li>
                             <label>
-                              <!--  <input class="visualy-hidden color-input" type="checkbox"  name="color[]" value="red"> -->
+                                <input class="visually-hidden color-input" type="checkbox"  name="color[]" value="red">
                                 <span class="filter-items">
                                     Красный
                                 </span>
@@ -147,7 +147,7 @@
                         </li>
                         <li>
                             <label>
-                               <!-- <input class="visualy-hidden color-input" type="checkbox"  name="color[]" value="pink"> -->
+                                <input class="visually-hidden color-input" type="checkbox"  name="color[]" value="pink">
                                 <span class="filter-items">
                                     Розовый
                                 </span>
@@ -156,7 +156,7 @@
                     </ul>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="bluetooth">
                     <legend class="filter-legend">
                         Bluetooth
                     </legend>
@@ -182,16 +182,17 @@
                 </fieldset>
             </form>
 
-            <button class="buttons" type="submit">
+            <button class="buttons show-button" type="submit">
                 Показать
             </button>
+          </div>
         </section>
 
         <div class="catalog-container-right">
-        <aside>
-            <h3 class="filer-headline">Сортировка:</h3>
+        <aside class="sorting">
+            <h3 class="catalog-headline">Сортировка:</h3>
 
-            <form class="sorting">
+            <form class="sorting-value">
                 <select class="sorting-list">
                     <option value="popular">
                         Сначала популярные
@@ -203,21 +204,22 @@
                         Сначала дорогое
                     </option>
                 </select>
-              <!--  <button class="visualy-hidden" type="submit">
+                <button class="visually-hidden" type="submit">
                     Отсортировать
-                </button> -->
+                </button>
             </form>
 
             <form class="sorting-buttons">
-               <!-- <label class="visualy-hidden" for="sorting-button-up">Отсортировать от меньшего к большему</label> -->
+               <label class="visually-hidden" for="sorting-button-up">Отсортировать от меньшего к большему</label>
                 <input id="sorting-button-up" type="radio" value="up" name="sorting-buttons">
-               <!-- <label class="visualy-hidden" for="sorting-button-up">Отсортировать от большего к меньшему</label> -->
+                <label class="visually-hidden" for="sorting-button-up">Отсортировать от большего к меньшему</label>
                 <input id="sorting-button-down" type="radio" value="down" name="sorting-buttons">
             </form>
         </aside>
 
+
         <section>
-          <!--  <h2 class="visualy-hidden">Товары:</h2> -->
+            <h2 class="visually-hidden">Товары:</h2>
 
             <ul class="product-card-list">
                 <li>
@@ -261,16 +263,16 @@
 
 
         <section class="pagination">
-            <button class="show-more" type="button">Загрузить еще</button>
+            <button class="catalog-headline show-more-button" type="button">Загрузить еще</button>
 
             <nav class="pagination-navigation">
             <ul class="pagination-list">
-                <li class="pagination-item">
+                <li class="pagination-item-back catalog-headline">
                     <a class="pagination-link" href="#">
                       Назад
-                      <!--  <span class="visualy-hidden">
+                      <span class="visually-hidden">
                           Предыдущая страница
-                        </span> -->
+                        </span>
                     </a>
                 </li>
                 <li class="pagination-item">
@@ -298,12 +300,12 @@
                         15
                     </a>
                 </li>
-                <li class="pagination-item">
+                <li class="pagination-item-next catalog-headline">
                     <a class="pagination-link" href="#">
                       Вперёд
-                      <!--  <span class="visualy-hidden">
+                        <span class="visually-hidden">
                           Следующая страница
-                        </span> -->
+                        </span>
                     </a>
                 </li>
             </ul>
@@ -315,7 +317,7 @@
     </main>
 
     <footer class="page-footer">
-      <div class="footer-container container">
+      <div class="footer-container">
             <a class="footer-logo" href="index.html">
                 <img src="img/logo-footer.svg" width="145" height="36" alt="Логотип магазина Девайс.">
             </a>
@@ -352,27 +354,27 @@
 
         <div class="footer-links">
           <div class="social-media">
-          <!--  <h2 class="visualy-hidden">Мы в социальных сетях.</h2> -->
+           <h2 class="visually-hidden">Мы в социальных сетях.</h2>
             <ul class="social-media-list">
                 <li>
-                    <a href="https://www.facebook.com/htmlacademy" target="_blank">
+                    <a href="https://www.facebook.com/htmlacademy" target="_blank">gggggg
                         <img src="img/facebook.svg" width="9" height="18" alt="Ссылка на нашу страницу в Facebook.">
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/htmlacademy" target="_blank">
+                    <a href="https://www.instagram.com/htmlacademy" target="_blank">iiiiii
                         <img src="img/instagram.svg" width="16" height="16" alt="Ссылка на нашу страницу в Instagram.">
                     </a>
                 </li>
                 <li>
-                    <a href="https://twitter.com/htmlacademy_ru" target="_blank">
+                    <a href="https://twitter.com/htmlacademy_ru" target="_blank">tttttt
                         <img src="img/twitter.svg" width="16" height="14" alt="Ссылка на нашу страницу в Twitter.">
                     </a>
                 </li>
             </ul>
           </div>
 
-          <a href="https://htmlacademy.ru/">
+          <a class="htmlacademy-link" href="https://htmlacademy.ru/">
             <img src="img/htmlacademy.svg" width="115" height="33" alt="Разработано в «HtmlAcademy».">
           </a>
         </div>
