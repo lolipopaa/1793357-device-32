@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <header class="page-header">
-        <a href="index.html">
+    <header class="page-header container">
+        <a  class="logo-header" href="index.html">
           <img src="img/logo.svg" width="145" height="36" alt="Логотип магазина Девайс.">
         </a>
 
@@ -33,35 +33,38 @@
                 </button>
               </div>
 
-        <ul class="navigation-list">
-                <li class="navigation-item">
-                    <button class="navigation-link catalog-link" type="button">
-                        Каталог товаров
-                    </button>
-                </li>
-                <li class="navigation-item">
-                    <a class="navigation-link" href="#">
-                        Доставка
-                    </a>
-                </li>
-                <li class="navigation-item guarantee-link">
-                    <a class="navigation-link" href="#">
-                        Гарантия
-                    </a>
-                </li>
-                <li class="navigation-item contacts-link">
-                    <a class="navigation-link" href="#">
-                        Контакты
-                    </a>
-                </li>
-            </ul>
+              <div class="navigation-menu">
+                <button class="navigation-link catalog-link" type="button">
+                  Каталог товаров
+              </button>
+
+              <ul class="navigation-list list-style-none">
+                      <li class="navigation-item-delivery">
+                          <a class="navigation-link" href="#">
+                              Доставка
+                          </a>
+                      </li>
+                      <li class="navigation-item-guarantee">
+                          <a class="navigation-link" href="#">
+                              Гарантия
+                          </a>
+                      </li>
+                      <li class="navigation-item-contacts">
+                          <a class="navigation-link" href="#">
+                              Контакты
+                          </a>
+                      </li>
+                  </ul>
+          </div>
         </nav>
     </header>
 
     <main class="main-container">
         <h1 class="visually-hidden">Интернет магазин "Device".</h1>
 
-        <div class="slider">
+        <div class="slider container">
+          <div class="slider-background">
+          </div>
           <div class="slider-container">
            <h2 class="visually-hidden">Наши предложения.</h2>
 
@@ -84,11 +87,11 @@
               <table class="offers-description">
                   <tr>
                       <td class="offers-quality">800 м</td>
-                      <td class="offers-characteristic">Дальность полета</td>
+                      <td class="offers-quality">50 м</td>
                   </tr>
                   <tr>
-                      <td class="offers-quality">50 м</td>
-                      <td class="offers-characteristic">Радиус поражения</td>
+                    <td class="offers-characteristic">Дальность полета</td>
+                    <td class="offers-characteristic">Радиус поражения</td>
                   </tr>
               </table>
               </div>
@@ -109,7 +112,9 @@
                 <table class="offers-description">
                   <tr>
                       <td class="offers-quality">48 часов</td>
-                      <td class="offers-characteristic">Без подзарядки</td>
+                  </tr>
+                  <tr>
+                    <td class="offers-characteristic">Без подзарядки</td>
                   </tr>
               </table>
             </div>
@@ -130,16 +135,14 @@
               <table class="offers-description">
                 <tr>
                     <td class="offers-quality">8,5 м</td>
-                    <td class="offers-characteristic">Длина палки</td>
-                </tr>
-                <tr>
                     <td class="offers-quality">5 кг</td>
-                    <td class="offers-characteristic">Вес палки</td>
+                    <td class="offers-quality">Карбон</td>
                 </tr>
                 <tr>
-                  <td class="offers-quality">Карбон</td>
+                  <td class="offers-characteristic">Длина палки</td>
+                  <td class="offers-characteristic">Вес палки</td>
                   <td class="offers-characteristic">Материал</td>
-              </tr>
+                </tr>
             </table>
           </div>
             </article>
@@ -153,7 +156,7 @@
             </button>
           </div>
 
-            <ol class="slider-pagination">
+            <ol class="slider-pagination list-style-none">
               <li>
                 <button class="slider-dot" type="button" area-label="Первое предложение.">
                 </button>
@@ -170,10 +173,10 @@
         </div>
 
 
-        <section class="catalog">
+        <section class="catalog container">
          <h2 class="visually-hidden">Каталог.</h2>
 
-        <ul class="catalog-list">
+        <ul class="catalog-list list-style-none">
             <li class="catalog-item">
                 <a class="menu-links vr" href="#">
                   Виртуальная реальность
@@ -208,12 +211,12 @@
         </section>
 
         <div class="services-container-background">
-        <section class="services">
+        <section class="services container">
          <h2 class="visually-hidden">Услуги.</h2>
 
         <div class="services-container">
         <nav class="services-navigation">
-        <ul class="services-list">
+        <ul class="services-list list-style-none">
             <li class="services-item">
                 <button class="buttons selected" type="button">
                     Доставка
@@ -259,18 +262,20 @@
         </section>
         </div>
 
-        <section class="delivery">
-            <a class="delivery-link" href="#">
+        <section class="delivery container">
+            <a class="delivery-link">
               Доставим редкий товар под заказ
             </a>
         </section>
 
-        <div class="info">
+        <div class="info container">
         <section class="about-us">
             <h2 class="headlines headline-info">О нас</h2>
 
-            <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-            <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+            <div class="about-us-information">
+              <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+              <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+            </div>
 
             <ul class="delivery-list">
                 <li class="delivery-item">
@@ -284,7 +289,7 @@
                 </li>
             </ul>
 
-            <a class="buttons" href="#">
+            <a class="buttons about-us-button" href="#">
                 Подробнее о нас
             </a>
         </section>
@@ -308,14 +313,14 @@
             <p class="working-hours">пн—пт: с 10:00 до 22:00<br>
                 сб—вс: с 10:00 до 19:00</p>
 
-            <a class="buttons" href="#">
+            <a class="buttons write-button" href="#">
                 Напишите нам
             </a>
             </section>
           </div>
 
         <div class="subscribe-container-background">
-        <section class="subscribe">
+        <section class="subscribe container">
           <div class="subscribe-container">
             <h2 class="headlines">Подпишитесь на рассылку</h2>
 
@@ -324,7 +329,7 @@
             </p>
           </div>
 
-            <form action="https://echo.htmlacademy.ru/" metod="post">
+            <form class="subscribe-input" action="https://echo.htmlacademy.ru/" metod="post">
                 <input type="email" name="subscribe-email" placeholder="Ваш e-mail">
                 <input type="submit" value="Подписаться">
             <p>
@@ -336,57 +341,57 @@
     </main>
 
     <footer class="page-footer">
-      <div class="footer-container">
+      <div class="footer-container container">
             <a class="footer-logo" href="index.html">
                 <img src="img/logo-footer.svg" width="145" height="36" alt="Логотип магазина Девайс.">
             </a>
 
             <div class="footer-menu">
-            <address class="address-footer">Санкт-Петербург, набережная
-                    реки Карповки, 5, литера П.
-            </address>
+              <address class="address-footer">Санкт-Петербург, набережная
+                      реки Карповки, 5, литера П.
+              </address>
 
-            <nav class="navigation-footer">
-            <ul class="footer-navigation-list">
-                <li class="footer-navigation-item">
-                  <a class="navigation-link" href="#">
-                    Доставка
-                  </a>
-                </li>
-                <li class="footer-navigation-item">
-                  <a class="navigation-link" href="#">
-                    Гарантия
+              <nav class="navigation-footer">
+              <ul class="footer-navigation-list list-style-none">
+                  <li class="footer-navigation-item">
+                    <a class="navigation-link" href="#">
+                      Доставка
                     </a>
-                </li>
-                <li class="footer-navigation-item">
-                  <a class="navigation-link" href="#">
-                    Контакты
-                  </a>
-                </li>
-            </ul>
-            </nav>
+                  </li>
+                  <li class="footer-navigation-item">
+                    <a class="navigation-link" href="#">
+                      Гарантия
+                      </a>
+                  </li>
+                  <li class="footer-navigation-item">
+                    <a class="navigation-link" href="#">
+                      Контакты
+                    </a>
+                  </li>
+              </ul>
+              </nav>
 
-            <a class="footer-tel" href="tel:+78128121212">
-              Тел.: +7 (812) 812-12-12
-            </a>
+              <a class="footer-tel" href="tel:+78128121212">
+                Тел.: +7 (812) 812-12-12
+              </a>
             </div>
 
         <div class="footer-links">
           <div class="social-media">
            <h2 class="visually-hidden">Мы в социальных сетях.</h2>
-            <ul class="social-media-list">
+            <ul class="social-media-list list-style-none">
                 <li>
-                    <a href="https://www.facebook.com/htmlacademy" target="_blank">gggggg
+                    <a href="https://www.facebook.com/htmlacademy" target="_blank">
                         <img src="img/facebook.svg" width="9" height="18" alt="Ссылка на нашу страницу в Facebook.">
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/htmlacademy" target="_blank">iiiiii
+                    <a href="https://www.instagram.com/htmlacademy" target="_blank">
                         <img src="img/instagram.svg" width="16" height="16" alt="Ссылка на нашу страницу в Instagram.">
                     </a>
                 </li>
                 <li>
-                    <a href="https://twitter.com/htmlacademy_ru" target="_blank">tttttt
+                    <a href="https://twitter.com/htmlacademy_ru" target="_blank">
                         <img src="img/twitter.svg" width="16" height="14" alt="Ссылка на нашу страницу в Twitter.">
                     </a>
                 </li>

@@ -7,8 +7,8 @@
   </head>
 
   <body>
-    <header class="page-header">
-      <a href="index.html">
+    <header class="page-header container">
+      <a  class="logo-header" href="index.html">
         <img src="img/logo.svg" width="145" height="36" alt="Логотип магазина Девайс.">
       </a>
 
@@ -34,38 +34,39 @@
               </button>
             </div>
 
-      <ul class="navigation-list">
-              <li class="navigation-item">
-                  <button class="navigation-link catalog-link" type="button">
-                      Каталог товаров
-                  </button>
-              </li>
-              <li class="navigation-item">
-                  <a class="navigation-link" href="#">
-                      Доставка
-                  </a>
-              </li>
-              <li class="navigation-item guarantee-link">
-                  <a class="navigation-link" href="#">
-                      Гарантия
-                  </a>
-              </li>
-              <li class="navigation-item contacts-link">
-                  <a class="navigation-link" href="#">
-                      Контакты
-                  </a>
-              </li>
-          </ul>
+            <div class="navigation-menu">
+              <button class="navigation-link catalog-link" type="button">
+                Каталог товаров
+            </button>
+
+            <ul class="navigation-list list-style-none">
+                    <li class="navigation-item-delivery">
+                        <a class="navigation-link" href="#">
+                            Доставка
+                        </a>
+                    </li>
+                    <li class="navigation-item-guarantee">
+                        <a class="navigation-link" href="#">
+                            Гарантия
+                        </a>
+                    </li>
+                    <li class="navigation-item-contacts">
+                        <a class="navigation-link" href="#">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+        </div>
       </nav>
   </header>
 
     <main class="main-container">
-      <div class="page-catalog">
-      <h2 class="headlines">
-        Моноподы для селфи
-      </h2>
+        <div class="headline-and-breadcrumbs container">
+        <h2 class="headlines">
+          Моноподы для селфи
+        </h2>
 
-        <ul class="breadcrumbs">
+        <ul class="breadcrumbs list-style-none">
             <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link" href="index.html">
                     Главная
@@ -82,12 +83,15 @@
                 </a>
             </li>
         </ul>
+       </div>
 
         <div class="catalog-container">
-        <section class="filter-container">
-            <h3 class="catalog-headline">Фильтр:</h3>
+        <section class="catalog-container-left">
+          <div class="filter-headline-background">
+            <h3 class="catalog-headline filter-headline">Фильтр:</h3>
+          </div>
 
-            <div class="filters">
+            <div class="filter-container">
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset>
                     <legend class="filter-legend">
@@ -112,7 +116,7 @@
                         Цвет
                     </legend>
 
-                    <ul class="filter-list-color">
+                    <ul class="filter-list-color list-style-none">
                         <li>
                             <label>
                                <input class="visually-hidden color-input checked" type="checkbox" name="color[]" value="black" checked>
@@ -161,7 +165,7 @@
                         Bluetooth
                     </legend>
 
-                    <ul class="filter-bluetooth">
+                    <ul class="filter-bluetooth list-style-none">
                         <li>
                             <label>
                             <input type="radio" value="yes" name="bluetooth-radio" checked>
@@ -185,10 +189,11 @@
             <button class="buttons show-button" type="submit">
                 Показать
             </button>
-          </div>
+            </div>
         </section>
 
         <div class="catalog-container-right">
+        <div class="sorting-container">
         <aside class="sorting">
             <h3 class="catalog-headline">Сортировка:</h3>
 
@@ -216,12 +221,13 @@
                 <input id="sorting-button-down" type="radio" value="down" name="sorting-buttons">
             </form>
         </aside>
+        </div>
 
 
-        <section>
+        <section class="product-card-all">
             <h2 class="visually-hidden">Товары:</h2>
 
-            <ul class="product-card-list">
+            <ul class="product-card-list list-style-none">
                 <li>
                     <div class="product-card">
                       <a class="product-card-link" href="#">
@@ -266,58 +272,55 @@
             <button class="catalog-headline show-more-button" type="button">Загрузить еще</button>
 
             <nav class="pagination-navigation">
-            <ul class="pagination-list">
-                <li class="pagination-item-back catalog-headline">
-                    <a class="pagination-link" href="#">
-                      Назад
-                      <span class="visually-hidden">
-                          Предыдущая страница
-                        </span>
-                    </a>
-                </li>
+              <a class="catalog-headline" href="#">
+                Назад
+                <span class="visually-hidden">
+                    Предыдущая страница
+                  </span>
+              </a>
+
+            <ul class="pagination-list list-style-none">
                 <li class="pagination-item">
-                    <a class="pagination-link pagination-item-current" href="#">
+                    <a class="catalog-headline pagination-link pagination-item-current" href="#">
                         1
                     </a>
                 </li>
                 <li class="pagination-item">
-                    <a class="pagination-link" href="#">
+                    <a class="catalog-headline pagination-link" href="#">
                         2
                     </a>
                 </li>
                 <li class="pagination-item">
-                    <a class="pagination-link" href="#">
+                    <a class="catalog-headline pagination-link" href="#">
                         3
                     </a>
                 </li>
                 <li class="pagination-item">
-                    <span>
+                    <span class="pagination-link">
                         ...
                     </span>
                 </li>
                 <li class="pagination-item">
-                    <a class="pagination-link" href="#">
+                    <a class="catalog-headline pagination-link" href="#">
                         15
                     </a>
                 </li>
-                <li class="pagination-item-next catalog-headline">
-                    <a class="pagination-link" href="#">
-                      Вперёд
-                        <span class="visually-hidden">
-                          Следующая страница
-                        </span>
-                    </a>
-                </li>
             </ul>
+
+            <a class="catalog-headline" href="#">
+              Вперёд
+                <span class="visually-hidden">
+                  Следующая страница
+                </span>
+            </a>
         </nav>
         </section>
       </div>
-    </div>
-  </div>
+      </div>
     </main>
 
     <footer class="page-footer">
-      <div class="footer-container">
+      <div class="footer-container container">
             <a class="footer-logo" href="index.html">
                 <img src="img/logo-footer.svg" width="145" height="36" alt="Логотип магазина Девайс.">
             </a>
@@ -328,7 +331,7 @@
             </address>
 
             <nav class="navigation-footer">
-            <ul class="footer-navigation-list">
+            <ul class="footer-navigation-list list-style-none">
                 <li class="footer-navigation-item">
                   <a class="navigation-link" href="#">
                     Доставка
@@ -355,19 +358,19 @@
         <div class="footer-links">
           <div class="social-media">
            <h2 class="visually-hidden">Мы в социальных сетях.</h2>
-            <ul class="social-media-list">
+            <ul class="social-media-list list-style-none">
                 <li>
-                    <a href="https://www.facebook.com/htmlacademy" target="_blank">gggggg
+                    <a href="https://www.facebook.com/htmlacademy" target="_blank">
                         <img src="img/facebook.svg" width="9" height="18" alt="Ссылка на нашу страницу в Facebook.">
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/htmlacademy" target="_blank">iiiiii
+                    <a href="https://www.instagram.com/htmlacademy" target="_blank">
                         <img src="img/instagram.svg" width="16" height="16" alt="Ссылка на нашу страницу в Instagram.">
                     </a>
                 </li>
                 <li>
-                    <a href="https://twitter.com/htmlacademy_ru" target="_blank">tttttt
+                    <a href="https://twitter.com/htmlacademy_ru" target="_blank">
                         <img src="img/twitter.svg" width="16" height="14" alt="Ссылка на нашу страницу в Twitter.">
                     </a>
                 </li>
