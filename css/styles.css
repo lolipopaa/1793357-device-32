@@ -69,7 +69,7 @@ body{
   margin-right: auto;
 }
 
-.list-style-none{
+.reset-list{
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -161,13 +161,20 @@ body{
 }
 
 /* Slider */
-.slider-background{
+.slider::before{
+  content: "";
+  display: block;
   background-color: #FFE17F;
   height: 114px;
 }
 
 .slider-container{
   margin-top: -95px;
+}
+
+.slide-image{
+  margin-top: -50px;
+  margin-right: 40px;
 }
 
 .slider-tagline{
