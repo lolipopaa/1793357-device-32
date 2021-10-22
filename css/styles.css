@@ -75,6 +75,16 @@ body{
   padding: 0;
 }
 
+.headlines{
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
 /* Header */
 .page-header{
   background-color: #FFE17F;
@@ -296,46 +306,61 @@ body{
 /* Services */
 .services-container-background{
   background-color: #F0F0F0;
+  margin-top: 169px;
+  padding-top: 1px;
+  height: 287px;
+}
+
+.services{
+  margin-top: -31px;
 }
 
 .services-container{
   display: flex;
-  margin-top: 69px;
+  padding-bottom: 69px;
 }
 
-.services-info-all{
-  padding: 78px 66px 69px 116px;
-  margin-top: -110px;
+.services-headline{
+  margin-left: 116px;
 }
 
 .services-navigation{
-  padding: 89px 117px 150px 0;
-  margin-top: -110px;
+  padding-right: 117px;
 }
 
 .services-item{
   margin-bottom: 44px;
 }
 
+.services-info-all::before{
+  content: "";
+  width: 7px;
+  height: 319px;
+}
 .services-icon{
   display: block;
   background-repeat: no-repeat;
+  margin-top: 14px;
+  margin-left: 116px;
 }
 
 .delivery-icon::after{
   content: "";
+  margin-left: 61px;
   background-image: url(../img/illustration-delivery.svg);
   background-size: 136px 164px;
 }
 
 .warranty-icon::after{
   content: "";
+  margin-left: 43px;
   background-image: url(../img/illustration-warranty.svg);
   background-size: 171px 195px;
 }
 
 .credit-icon::after{
   content: "";
+  margin-left: 35px;
   background-image: url(../img/illustration-credit.svg);
   background-repeat: no-repeat;
   background-size: 156px 188px;
@@ -419,15 +444,6 @@ body{
   margin-top: 52px;
 }
 
-.headlines{
-  font-family: Raleway, sans-serif;
-  font-weight: 800;
-  font-size: 50px;
-  line-height: 50px;
-  color: #000000;
-  margin: 0;
-  padding: 0;
-}
 
 .contacts{
   width: 50%;
