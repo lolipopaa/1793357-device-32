@@ -561,11 +561,13 @@ body{
 
 .breadcrumbs{
   display: flex;
+  align-items: flex-end;
   margin-top: 14px;
 }
 
 .breadcrumbs-item:not(:first-child)::before{
   content: "";
+  display: block;
   width: 4px;
   height: 7px;
   margin-left: 17px;
@@ -602,8 +604,7 @@ body{
 
 .filter-container{
   width: 328px;
-  padding-left: 60px;
-  padding-top: 83px;
+  padding: 83px 68px 77px 60px;
 }
 
 .color{
