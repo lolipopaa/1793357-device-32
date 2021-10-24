@@ -308,11 +308,10 @@ body{
   background-color: #F0F0F0;
   margin-top: 169px;
   padding-top: 1px;
-  height: 287px;
 }
 
 .services{
-  margin-top: -31px;
+  margin-top: -100px;
 }
 
 .services-container{
@@ -320,12 +319,10 @@ body{
   padding-bottom: 69px;
 }
 
-.services-headline{
-  margin-left: 116px;
-}
 
 .services-navigation{
   padding-right: 117px;
+  margin-top: 70px;
 }
 
 .services-item{
@@ -337,11 +334,15 @@ body{
   width: 7px;
   height: 319px;
 }
+
+.services-info-all{
+  margin: 70px 66px 69px 116px;
+}
+
 .services-icon{
   display: block;
   background-repeat: no-repeat;
   margin-top: 14px;
-  margin-left: 116px;
 }
 
 .delivery-icon::after{
@@ -561,13 +562,12 @@ body{
 
 .breadcrumbs{
   display: flex;
-  align-items: flex-end;
   margin-top: 14px;
 }
 
 .breadcrumbs-item:not(:first-child)::before{
   content: "";
-  display: block;
+  display: inline-block;
   width: 4px;
   height: 7px;
   margin-left: 17px;
@@ -594,12 +594,16 @@ body{
   background-color: #EBEBEB;
 }
 
+.filter-headline-background{
+  background-color: #DCDCDC;
+  height: 70px;
+}
+
 .filter-headline{
   width: 328px;
   margin-left: auto;
   margin-right: auto;
   padding: 25px 32px 25px 60px;
-  background-color: #DCDCDC;
 }
 
 .filter-container{
@@ -626,7 +630,8 @@ body{
 
 .sorting{
   width: 832px;
-  padding: 25px 0 25px 72px;
+  height: 70px;
+  padding-left: 72px;
   display: flex;
   align-items: center;
 }
