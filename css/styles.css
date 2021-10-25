@@ -335,8 +335,8 @@ body{
   height: 319px;
 }
 
-.services-info-all{
-  margin: 70px 66px 69px 116px;
+.services-info{
+  padding: 70px 66px 69px 116px;
 }
 
 .services-icon{
