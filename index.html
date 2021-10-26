@@ -15,7 +15,7 @@
           <div class="navigation-user">
             <form class="search-form">
                 <label>
-                  <input type="search" placeholder="Поиск по сайту">
+                  <input class="reset-input" type="search" placeholder="Поиск по сайту">
                     Поиск по сайту
                 </label>
             </form>
@@ -28,15 +28,15 @@
                     Сравнить
                 </a>
 
-                <button class="navigation-user-link shopping-cart" type="button">
+                <button class="navigation-user-link shopping-cart reset-input" type="button">
                     Корзина
                 </button>
               </div>
 
               <div class="navigation-menu">
-                <button class="navigation-link catalog-link" type="button">
+                <button class="navigation-link catalog-link reset-input buttons"  type="button">
                   Каталог товаров
-              </button>
+                </button>
 
               <ul class="navigation-list reset-list">
                       <li class="navigation-item-delivery">
@@ -73,12 +73,12 @@
                 <h4 class="slider-tagline">
                   Порхает как бабочка, жалит как пчела!
                 </h4>
-                <p>
+                <p class="slider-text">
                   Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
                 </p>
               </div>
 
-              <a class="buttons" href="#">
+              <a class="buttons slider-more" href="#">
                 Подробнее
               </a>
 
@@ -100,10 +100,10 @@
               <div class="slider-description">
                 <div class="slide-info">
                 <h4 class="slider-tagline">Худеем правильно!</h4>
-                <p >Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+                <p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
                 </div>
 
-              <a class="buttons" href="#">
+              <a class="buttons slider-more" href="#">
                 Подробнее
               </a>
 
@@ -123,10 +123,12 @@
               <div class="slider-description">
               <div class="slide-info">
               <h4 class="slider-tagline">Делай селфи, как Бен Стиллер! </h4>
-              <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+              <p class="slider-text">
+                Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
+              </p>
               </div>
 
-              <a class="buttons" href="#">
+              <a class="buttons slider-more" href="#">
                 Подробнее
               </a>
 
@@ -216,16 +218,16 @@
         <nav class="services-navigation">
         <ul class="services-list reset-list">
             <li class="services-item">
-                <button class="buttons selected" type="button">
+                <button class="buttons selected reset-input" type="button">
                     Доставка
                 </button>
             </li>
             <li class="services-item">
-              <button class="buttons" type="button">
+              <button class="buttons reset-input" type="button">
               Гарантия
             </button>
             <li>
-              <button class="buttons" type="button">
+              <button class="buttons reset-input" type="button">
                     Кредит
               </button>
             </li>
@@ -320,19 +322,22 @@
         <div class="subscribe-container-background">
         <section class="subscribe container">
           <div class="subscribe-container">
-            <h2 class="headlines">Подпишитесь на рассылку</h2>
+            <h2 class="headlines">
+              Подпишитесь <br>
+              на рассылку
+            </h2>
 
-            <p> Еженедельный дайджест с обзорами новинок,
+            <p class="subscribe-info"> Еженедельный дайджест с обзорами новинок,<br>
                 длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
             </p>
           </div>
 
             <form class="subscribe-input" action="https://echo.htmlacademy.ru/" metod="post">
-                <input type="email" name="subscribe-email" placeholder="Ваш e-mail">
-                <input type="submit" value="Подписаться">
-            <p>
-              Это бесплатно
-            </p>
+                <input class="subscribe-email reset-input" type="email" name="subscribe-email" placeholder="Ваш e-mail">
+                <input class="buttons subscribe-submit" type="submit" value="Подписаться">
+                <p class="subscribe-free">
+                  Это бесплатно
+                </p>
             </form>
         </section>
         </div>
