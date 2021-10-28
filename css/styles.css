@@ -104,14 +104,9 @@ body{
 }
 
 .navigation{
-  display:flex;
-  flex-direction: column;
-}
-
-.navigation-user{
   display: grid;
-  grid-template-columns: 50% 1fr 1fr 1fr;
-  gap:15px;
+  grid-template-columns: 50% 1fr 1fr;
+  row-gap: 44px;
 }
 
 .navigation-user-link{
@@ -147,8 +142,9 @@ body{
   height: 12px;
 }
 
-.compare-link{
-  justify-self: end;
+.right-items-navigation{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .shopping-cart::before{
@@ -156,12 +152,9 @@ body{
   width: 16px;
   height: 14px;
 }
-
-.navigation-menu{
-  margin-top: 43px;
-  display: grid;
-  grid-template-columns: 50% 1fr;
-  column-gap: 19px;
+.compare-link,.shopping-cart{
+  justify-self: end;
+  align-self: end;
 }
 
 .catalog-link{
@@ -175,14 +168,15 @@ body{
 }
 
 .navigation-list{
+  grid-column: span 2;
   display: grid;
-  grid-template-columns: 1fr 1fr 60px 1fr;
+
+  grid-template-columns: 1fr 1fr 1fr;
   column-gap: 19px;
 }
 
 .navigation-item-contacts{
-  grid-column: -1/-2;
-}
+margin-left: auto;}
 
 .main-container{
   flex-grow: 1;
@@ -198,6 +192,11 @@ body{
 
 .slider-container{
   margin-top: -98px;
+}
+
+.slider-description{
+  display: flex;
+  flex-direction: column;
 }
 
 .slide-image{
@@ -220,7 +219,13 @@ body{
 
 .offers-description{
   margin-top: 70px;
-  border-spacing: 20px;
+  border-spacing: 5px;
+  display: flex;
+
+}
+
+.slider-more{
+  margin-top: 30px;
 }
 
 .offers-quality{
