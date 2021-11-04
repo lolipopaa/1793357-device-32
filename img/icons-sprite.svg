@@ -1,0 +1,13 @@
+<svg>
+
+	<symbol id="login" viewBox="0 0 13 12">
+    <path d="M0 12H13C12.8 9.4 10.9 7.2 8.3 6.5C9.3 5.9 10 4.8 10 3.5C10 1.6 8.4 0 6.5 0C4.6 0 3 1.6 3 3.5C3 4.8 3.7 5.9 4.7 6.5C2.1 7.2 0.2 9.4 0 12Z" fill="black"/>
+  </symbol>
+
+  <svg id="compare" viewBox="0 0 10 12">
+    <path d="M6 0H4V12H6V0Z" fill="black"/>
+    <path d="M2 4H0V12H2V4Z" fill="black"/>
+    <path d="M10 3H8V12H10V3Z" fill="black"/>
+  </svg>
+
+</svg>

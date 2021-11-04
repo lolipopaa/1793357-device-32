@@ -173,6 +173,23 @@ body{
   margin-right: auto;
 }
 
+.login-link::before{
+  content: "";
+  display: block;
+  width: 13px;
+  height: 12px;
+  background: url(../img/icons-sprite.svg#login);
+  margin-right: 12px;
+}
+.compare-link::before{
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-image: url(../img/icons-sprite.svg#compare);
+  margin-right: 12px;
+}
+
 .navigation-icon{
   position: absolute;
   top: 0;
