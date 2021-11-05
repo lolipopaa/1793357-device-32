@@ -249,6 +249,8 @@ body{
 }
 
 .catalog-icon{
+.catalog-link::after{
+  content: "";
   border: 2px solid #000000;
   opacity: 0.2;
   border-radius: 25px;
@@ -257,6 +259,10 @@ body{
   height: 50px;
   position: absolute;
   left: 250px;
+  margin-left: 15px;
+  display: block;
+  background-image: url('../img/icons-sprite.svg#catalog');
+}
 }
 .catalog-icon:hover{
   opacity: 1;
@@ -373,6 +379,21 @@ body{
   letter-spacing: 0.2em;
   color: #000000;
   padding: 0;
+.slider-button-prev{
+  height: 60px;
+  width: 20px;
+  padding: 10px;
+  margin: -10px;
+  background-image: url('../img/icons-sprite.svg#left-arrow-slider');
+  border: steelblue solid;
+}
+
+.slider-button-next{
+  height: 60px;
+  width: 20px;
+  padding: 10px;
+  margin: -10px;
+  background-image: url('../img/icons-sprite.svg#right-arrow-slider');
 }
 
 .slider-pagination{
