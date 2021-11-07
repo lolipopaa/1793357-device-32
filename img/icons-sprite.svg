@@ -26,10 +26,6 @@
     <path d="M20 60H16.5L0 30L16.5 0H20L3.8 30L20 60Z" fill="black"/>
   </symbol>
 
-  <symbol id="right-arrow-slider" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 60H3.5L20 30L3.5 0H0L16.2 30L0 60Z" fill="black"/>
-  </symbol>
-
   <symbol id="delivery-i" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g opacity="0.3">
     <path d="M2 0H0V2H2V0Z" fill="black"/>
