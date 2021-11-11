@@ -213,8 +213,7 @@ body{
 
 .catalog-link::after{
   content: "";
-  border: 2px solid #000000;
-  opacity: 0.2;
+  border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 25px;
   padding: 17px;
   width: 50px;
@@ -381,7 +380,7 @@ body{
   padding-bottom: 16px;
 }
 
-.buttons-container{
+.buttons{
   margin-top: 16px;
   width: 100%;
   position: relative;
@@ -391,7 +390,11 @@ body{
   text-align: center;
 }
 
-.buttons-container::before{
+.button-large{
+  height: 50px;
+}
+
+.buttons::before{
   content: "";
   background-color: #FFE17F;
   display: block;
@@ -402,14 +405,15 @@ body{
   position: absolute;
 }
 
-.buttons-container:hover{
+.buttons:hover{
   background-color: #FFE17F;
 }
-.buttons-container:focus{
+.buttons:focus{
   outline: none;
 }
-.buttons-container:focus::before{
+.buttons:focus::before{
   background-color: #AF4FFF;
+  outline: none;
 }
 .slider-more:active{
   opacity: 0.3;
@@ -436,6 +440,10 @@ body{
 
 .slide{
   display: flex;
+}
+
+article:not(.selected-slide){
+  display: none;
 }
 
 .slider-pagination{
@@ -637,11 +645,15 @@ body{
   width: 180px;
 }
 
-.services-item .buttons-container{
+.services-item .buttons{
   z-index: 1;
   padding-top: 9px;
   padding-bottom: 11px;
   cursor: pointer;
+}
+
+.button-small{
+  height: 40px;
 }
 
 .services-item .selected{
@@ -651,13 +663,13 @@ body{
   color: rgba(255, 225, 127, 1);
 }
 
-.services-item .buttons-container::before{
+.services-item .buttons::before{
   background-color: #FFC700;
   left: 0;
   top: 16px;
 }
 
-.selected.buttons-container::before{
+.selected.buttons::before{
   background-color: transparent;
 }
 
@@ -665,12 +677,18 @@ body{
   margin-top: 25px;
 }
 
-.services-item .buttons-container:hover:not(.selected){
+.services-item .buttons:hover:not(.selected){
   background-color: #FFC700;
 }
-.services-item .buttons-container:focus::before{
+.services-item .buttons:hover::before{
+  background-color: transparent;
+}
+.buttons:focus::before{
   background-color: #AF4FFF;
   outline: none;
+}
+.selected.buttons:focus::before{
+  background-color: transparent;
 }
 
 .services-info-all::before{
@@ -905,8 +923,8 @@ body{
   margin-bottom: 67px;
 }
 
-.contacts .buttons-container:active,
-.about-us .buttons-container:active{
+.contacts .buttons:active,
+.about-us .buttons:active{
   color: rgba(0, 0, 0, 0.3);
   background-color: #FFE17F;
 }
@@ -1217,23 +1235,23 @@ body{
   margin-top: 58px;
 }
 
-.show-button .buttons-container{
+.show-button .buttons{
   cursor: pointer;
   z-index: 1;
   padding: 9px 10px 11px 10px;
   margin-top: 52px;
 }
 
-.show-button .buttons-container::before{
+.show-button .buttons::before{
   background-color: #FFC700;
   top: 16px;
   left: 0;
 }
 
-.show-button .buttons-container:hover{
+.show-button .buttons:hover{
   background-color: #FFC700;
 }
-.show-button .buttons-container:focus::before{
+.show-button .buttons:focus::before{
   background-color: #AF4FFF;
 }
 
