@@ -93,38 +93,40 @@
                 <a class="navigation-link catalog-link" href="#subcatalog">
                   Каталог товаров
                 </a>
-                <ul class="subcatalog reset-list" id="subcatalog">
-                  <li class="subcatalog-item subcatalog-vr">
-                    <a class="subcatalog-headlines" href="#">
-                      Виртуальная реальность
-                    </a>
-                  </li>
-                  <li class="subcatalog-item subcatalog-monopod">
-                    <a class="subcatalog-headlines" href="#">
-                      Моноподы для cелфи
-                    </a>
-                  </li>
-                  <li class="subcatalog-item subcatalog-action">
-                    <a class="subcatalog-headlines" href="#">
-                      Экшн-камеры
-                    </a>
-                  </li>
-                  <li class="subcatalog-item subcatalog-bracelet">
-                    <a class="subcatalog-headlines" href="#">
-                      Фитнес-браслеты
-                    </a>
-                  </li>
-                  <li class="subcatalog-item subcatalog-watch">
-                    <a class="subcatalog-headlines" href="#">
-                      Умные часы
-                    </a>
-                  </li>
-                  <li class="subcatalog-item subcatalog-kvadro">
-                    <a class="subcatalog-headlines" href="#">
-                      Квадрокоптеры
-                    </a>
-                  </li>
-                </ul>
+                <div class="subcatalog-container">
+                  <ul class="subcatalog reset-list" id="subcatalog">
+                    <li class="subcatalog-item subcatalog-vr">
+                      <a class="subcatalog-headlines" href="#">
+                        Виртуальная реальность
+                      </a>
+                    </li>
+                    <li class="subcatalog-item subcatalog-monopod">
+                      <a class="subcatalog-headlines" href="#">
+                        Моноподы для cелфи
+                      </a>
+                    </li>
+                    <li class="subcatalog-item subcatalog-action">
+                      <a class="subcatalog-headlines" href="#">
+                        Экшн-камеры
+                      </a>
+                    </li>
+                    <li class="subcatalog-item subcatalog-bracelet">
+                      <a class="subcatalog-headlines" href="#">
+                        Фитнес-браслеты
+                      </a>
+                    </li>
+                    <li class="subcatalog-item subcatalog-watch">
+                      <a class="subcatalog-headlines" href="#">
+                        Умные часы
+                      </a>
+                    </li>
+                    <li class="subcatalog-item subcatalog-kvadro">
+                      <a class="subcatalog-headlines" href="#">
+                        Квадрокоптеры
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
 
 
@@ -284,7 +286,7 @@
             </li>
             <li class="catalog-item">
                 <a class="menu-links actioncamera" href="#">
-                  Экшн камеры
+                  Экшн-камеры
                 </a>
             </li>
             <li class="catalog-item">
@@ -333,8 +335,8 @@
         <div class="services-info selected delivery-icon">
           <h3 class="headlines services-headline">Доставка</h3>
                 <p class="services-description">
-                  Мы с удовольствием доставим ваш товар прямо
-                    к вашему подъезду совершенно бесплатно! Ведь
+                  Мы с удовольствием доставим ваш товар прямо<br>
+                    к вашему подъезду совершенно бесплатно! Ведь<br>
                     мы неплохо заработаем, поднимая его на ваш этаж.
                 </p>
         </div>
@@ -541,32 +543,40 @@
 
         <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
 
-          <p class="delivery-group delivery-name">
+          <div class="delivery-group delivery-name">
             <label class="delivery-label" for="delivery-name">
               Ваше имя:
             </label>
-            <input class="reset-input modal-inputs delivery-name-input" type="text" id="delivery-name" name="delivery-name" placeholder="Имя Фамилия">
-          </p>
+            <div class="delivery-input-container name-container">
+              <input class="reset-input modal-inputs delivery-name-input" type="text" id="delivery-name" name="delivery-name" placeholder="Имя Фамилия">
+              <span class="input-info-name"></span>
+              <svg class="delivery-input-icon" aria-hidden="true" focusable="hidden" width="16" height="14">
+                <use href="img/icons-sprite.svg#login"></use>
+              </svg>
+            </div>
+          </div>
 
-          <p class="delivery-group delivery-email">
+          <div class="delivery-group delivery-email">
             <label class="delivery-label" for="delivery-email">
               Ваш e-mail:
             </label>
-            <div>
-            <input class="reset-input modal-inputs delivery-email-input" type="email" id="delivery-email" name="delivery-email" value="krasotka92@mail.ru" placeholder="Введите e-mail">
-          <span class="icon"></span>
-          <span>error</span>
+            <div class="delivery-input-container">
+              <input class="reset-input modal-inputs delivery-email-input" type="email" id="delivery-email" name="delivery-email" value="krasotka92@mail.ru" placeholder="Введите e-mail">
+              <span class="input-info-email"></span>
+              <svg class="delivery-input-icon" aria-hidden="true" focusable="hidden" width="15" height="12">
+                <use href="img/icons-sprite.svg#delivery-email"></use>
+              </svg>
+            </div>
           </div>
-          </p>
 
-          <p class="delivery-group delivery-goods">
+          <div class="delivery-group delivery-goods">
             <label class="delivery-label" for="delivery-goods">
               Что нужно привезти:
             </label>
             <input class="modal-inputs reset-input" type="text" id="delivery-goods" name="delivery-goods" placeholder="В свободной форме">
-          </p>
+          </div>
 
-          <p class="delivery-group delivery-number">
+          <div class="delivery-group delivery-number">
             <span class="delivery-number-container">
               <label class="delivery-label" for="delivery-number">
                 Количество:
@@ -577,12 +587,25 @@
                 </span>
               </button>
             </span>
-            <div>
-            <input class="reset-input modal-inputs delivery-number-input" id="delivery-number" type="number" value="1" min="1" step="1">
-            <button></button>
-            <button></button>
+
+            <div  class="delivery-group delivery-total-container">
+            <input class="reset-input modal-inputs delivery-total-input" id="delivery-total" type="number" value="1" min="1" step="1">
+
+            <div class="delivery-button-container">
+              <button class="total-button reset-input" type="button">
+                <svg class="minus-delivery-icon" aria-hidden="true" focusable="hidden" width="16" height="16">
+                  <use href="img/icons-sprite.svg#catalog-minus"></use>
+                </svg>
+              </button>
+
+              <button class="total-button reset-input" type="button">
+                <svg class="plus-delivery-icon" aria-hidden="true" focusable="hidden" width="16" height="16">
+                  <use href="img/icons-sprite.svg#catalog-plus"></use>
+                </svg>
+              </button>
+            </div>
+            </div>
           </div>
-          </p>
         </form>
 
 
