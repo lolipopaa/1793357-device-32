@@ -36,17 +36,99 @@
                   Сравнить
               </a>
 
-              <button class="navigation-user-link shopping-cart reset-input" type="button">
-                <svg class="navigation-icon shopping-icon" aria-hidden="true" focusable="hidden" width="16" height="14" >
-                  <use href="img/icons-sprite.svg#cart"></use>
-                </svg>
-                  Корзина
-              </button>
+              <div class="login-container">
+                <a class="navigation-user-link shopping-cart reset-input" href="#cart">
+                  <svg class="navigation-icon shopping-icon" aria-hidden="true" focusable="hidden" width="16" height="14" >
+                    <use href="img/icons-sprite.svg#cart"></use>
+                  </svg>
+                    Корзина
+                </a>
+
+              <div id="cart" class="popover">
+                    <ol class="reset-list cart-list">
+                      <li class="cart-item">
+                        <img class="item-photo" src="img/product-1.jpg" width="41" height="43" alt="Товар Любительская селфи-палка в корзине.">
+                        <p class="item-name">
+                          Любительская селфи-палка
+                        </p>
+                        <button class="delete-button reset-input">
+                          <svg class="delete-item-icon" aria-hidden="true" focusable="hidden" width="11" height="11" fill="#FFFFFF">
+                            <use href="img/icons-sprite.svg#catalog-plus"></use>
+                          </svg>
+                        </button>
+                      </li>
+                      <li class="cart-item">
+                        <img class="item-photo" src="img/product-2.jpg" width="41" height="43" alt="Товар Профессиональная селфи-палка в корзине.">
+                        <p class="item-name">
+                          Профессиональная селфи-палка
+                        </p>
+                        <button class="delete-button reset-input">
+                          <svg class="delete-item-icon" aria-hidden="true" focusable="hidden" width="11" height="11" fill="#FFFFFF">
+                            <use href="img/icons-sprite.svg#catalog-plus"></use>
+                          </svg>
+                          <span class="visually-hidden">
+                            Удалить из корзины
+                          </span>
+                        </button>
+                      </li>
+                    </ol>
+
+                    <div class="cart-total">
+                    <p>
+                      Товаров: 2
+                    </p>
+                    <p>
+                      Сумма: 2000 ₽
+                    </p>
+                    </div>
+
+                    <div class="open-cart">
+                      <a class="buttons" href="#">
+                        Открыть корзину
+                      </a>
+                    </div>
+                </div>
+              </div>
             </div>
 
-              <button class="navigation-link catalog-link reset-input"  type="button">
+
+            <div class="catalog-menu-container">
+              <a class="navigation-link catalog-link" href="#subcatalog">
                 Каталог товаров
-              </button>
+              </a>
+              <ul class="subcatalog reset-list" id="subcatalog">
+                <li class="subcatalog-item">
+                  <a class="subcatalog-headlines subcatalog-vr" href="#">
+                    Виртуальная реальность
+                  </a>
+                </li>
+                <li class="subcatalog-item subcatalog-monopod">
+                  <a class="subcatalog-headlines" href="#">
+                    Моноподы для cелфи
+                  </a>
+                </li>
+                <li class="subcatalog-item subcatalog-action">
+                  <a class="subcatalog-headlines" href="#">
+                    Экшн-камеры
+                  </a>
+                </li>
+                <li class="subcatalog-item subcatalog-bracelet">
+                  <a class="subcatalog-headlines" href="#">
+                    Фитнес-браслеты
+                  </a>
+                </li>
+                <li class="subcatalog-item subcatalog-watch">
+                  <a class="subcatalog-headlines" href="#">
+                    Умные часы
+                  </a>
+                </li>
+                <li class="subcatalog-item subcatalog-kvadro">
+                  <a class="subcatalog-headlines" href="#">
+                    Квадрокоптеры
+                  </a>
+                </li>
+              </ul>
+            </div>
 
 
             <ul class="navigation-list reset-list">
@@ -107,16 +189,25 @@
                         Стоимость
                     </legend>
                     <div class="range">
-                      <label for="price-min">
-                        от 0
-                      </label>
-                        <input id="price-min" type="range" min="0" step="1" value="0">
+                      <div class="range-scale">
+                        <div class="range-bar" style="left: 0px; width: 120px">
+                          <button class="range-toggle toggle-min">
+                            <span class="visually-hidden">Изменить минимальную цену.</span>
+                          </button>
+                          <button class="range-toggle toggle-max">
+                            <span class="visually-hidden">Изменить максимальную цену.</span>
+                          </button>
+                        </div>
+                      </div>
 
-
-                      <label for="price-max">
-                        до 5000
-                      </label>
-                        <input id="price-max" type="range" min="0" step="1" max="10000" value="5000">
+                      <div class="range-wrapper-inputs">
+                        <label class="catalog-filter-label">
+                          от <input class="range-input range-min" type="number" value="0" name="min-price">
+                        </label>
+                        <label class="catalog-filter-label">
+                          до <input class="range-input" type="number" value="5000" name="max-price" style="width: 50px">
+                        </label>
+                      </div>
                     </div>
                 </fieldset>
 
@@ -127,15 +218,15 @@
 
                     <ul class="filter-list-color reset-list">
                         <li class="filter-color-item">
-                            <label>
-                               <input class="visually-hidden color-input checked" type="checkbox" name="color[]" value="black" checked>
+                            <label class="color-label">
+                               <input class="visually-hidden color-input" type="checkbox" name="color[]" value="black" checked>
                                 <span class="filter-items">
                                     Черный
                                 </span>
                             </label>
                         </li>
                         <li class="filter-color-item">
-                            <label>
+                            <label class="color-label">
                                 <input class="visually-hidden color-input checked" type="checkbox"  name="color[]" value="white" checked>
                                 <span class="filter-items">
                                     Белый
@@ -143,7 +234,7 @@
                             </label>
                         </li>
                         <li class="filter-color-item">
-                            <label>
+                            <label class="color-label">
                                <input class="visually-hidden color-input" type="checkbox"  name="color[]" value="blue">
                                 <span class="filter-items">
                                     Синий
@@ -151,7 +242,7 @@
                             </label>
                         </li>
                         <li class="filter-color-item">
-                            <label>
+                            <label class="color-label">
                                 <input class="visually-hidden color-input" type="checkbox"  name="color[]" value="red">
                                 <span class="filter-items">
                                     Красный
@@ -159,7 +250,7 @@
                             </label>
                         </li>
                         <li class="filter-color-item">
-                            <label>
+                            <label class="color-label">
                                 <input class="visually-hidden color-input" type="checkbox"  name="color[]" value="pink">
                                 <span class="filter-items">
                                     Розовый
@@ -176,17 +267,19 @@
 
                     <ul class="filter-bluetooth reset-list">
                         <li class="filter-bluetooth-items">
-                            <label>
-                            <input type="radio" value="yes" name="bluetooth-radio" checked>
-                            <span class="filter-items">
+                            <label class="bluetooth-label">
+                            <input class="visually-hidden bluetooth-input reset-input" type="radio" value="yes" name="bluetooth-radio" checked>
+                            <span class="bluetooth-mark"></span>
+                            <span class="filter-items bluetooth-button">
                                 Есть
                             </span>
                             </label>
                         </li>
                         <li class="filter-bluetooth-items">
-                            <label>
-                            <input type="radio" value="no" name="bluetooth-radio">
-                            <span class="filter-items">
+                            <label class="bluetooth-label">
+                            <input class="visually-hidden bluetooth-input reset-input" type="radio" value="no" name="bluetooth-radio">
+                            <span class="bluetooth-mark"></span>
+                            <span class="filter-items bluetooth-button">
                                 Нет
                             </span>
                             </label>
@@ -196,7 +289,6 @@
             </form>
 
             <div class="show-button">
-              <button class="buttons buttons-container reset-input" type="submit">
               <button class="buttons reset-input button-large" type="submit">
                   Показать
               </button>
@@ -207,7 +299,9 @@
         <div class="catalog-container-right">
         <div class="sorting-container">
         <aside class="sorting">
-            <h3 class="catalog-headline">Сортировка:</h3>
+            <h3 class="catalog-headline">
+              Сортировка:
+            </h3>
             <form class="sorting-value">
                 <select class="sorting-list reset-input">
                     <option value="popular">
@@ -222,15 +316,31 @@
                 </select>
                 <button class="visually-hidden" type="submit">
                     Отсортировать
+
                 </button>
             </form>
 
 
             <form class="sorting-buttons">
-               <label class="visually-hidden" for="sorting-button-up">Отсортировать от меньшего к большему</label>
-                <input id="sorting-button-up" type="radio" value="up" name="sorting-buttons">
-                <label class="visually-hidden" for="sorting-button-up">Отсортировать от большего к меньшему</label>
-                <input id="sorting-button-down" type="radio" value="down" name="sorting-buttons">
+               <label class="sorting-label">
+                  <span class="visually-hidden">
+                   Отсортировать от меньшего к большему
+                  </span>
+                  <input class="visually-hidden" id="sorting-button-up" type="radio" value="up" name="sorting-buttons">
+                  <svg class="sorting-up" aria-hidden="true" focusable="hidden" width="11" height="10">
+                    <use href="img/icons-sprite.svg#sort"></use>
+                  </svg>
+              </label>
+
+              <label class="sorting-label">
+                <span class="visually-hidden">
+                  Отсортировать от большего к меньшему
+                </span>
+                <input class="visually-hidden" id="sorting-button-down" type="radio" value="down" name="sorting-buttons">
+                <svg class="sorting-down" aria-hidden="true" focusable="hidden" width="11" height="10">
+                  <use href="img/icons-sprite.svg#sort"></use>
+                </svg>
+              </label>
             </form>
 
         </aside>
@@ -249,7 +359,7 @@
                             <div class="product-card-image-container">
                               <img class="product-card-image" src="img/product-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
                             </div>
-                            <h3 class="product-card-name headlines">Любительская селфи-палка</h3>
+                            <h3 class="product-card-name headlines">Любительская селфи&#8209;палка</h3>
                             <span class="product-cart-price">500 ₽</span>
                         </div>
                       </a>
