@@ -196,23 +196,29 @@
                     <div class="range">
                       <div class="range-scale">
                         <div class="range-bar" style="left: 0px; width: 120px">
-                          <button class="range-toggle toggle-min">
-                            <span class="visually-hidden">Изменить минимальную цену.</span>
-                          </button>
-                          <button class="range-toggle toggle-max">
-                            <span class="visually-hidden">Изменить максимальную цену.</span>
-                          </button>
+                          <div class=" min-price-container">
+                            <button class="range-toggle toggle-min">
+                              <span class="visually-hidden">Изменить минимальную цену.</span>
+                            </button>
+
+                            <label class="catalog-filter-label">
+                              от <input class="range-input range-min reset-input" type="number" value="0" name="min-price">
+                            </label>
+                          </div>
+
+                          <div class="max-price-container">
+                            <button class="range-toggle toggle-max">
+                              <span class="visually-hidden">Изменить максимальную цену.</span>
+                            </button>
+
+                            <label class="catalog-filter-label">
+                              до <input class="range-input reset-input" type="number" value="5000" name="max-price" style="width: 50px">
+                            </label>
+                          </div>
                         </div>
                       </div>
 
-                      <div class="range-wrapper-inputs">
-                        <label class="catalog-filter-label">
-                          от <input class="range-input range-min" type="number" value="0" name="min-price">
-                        </label>
-                        <label class="catalog-filter-label">
-                          до <input class="range-input" type="number" value="5000" name="max-price" style="width: 50px">
-                        </label>
-                      </div>
+
                     </div>
                 </fieldset>
 
@@ -331,8 +337,8 @@
                   <span class="visually-hidden">
                    Отсортировать от меньшего к большему
                   </span>
-                  <input class="visually-hidden" id="sorting-button-up" type="radio" value="up" name="sorting-buttons">
-                  <svg class="sorting-up" aria-hidden="true" focusable="hidden" width="11" height="10">
+                  <input class="visually-hidden sorting-buttons-input" id="sorting-button-up" type="radio" value="up" name="sorting-buttons" checked>
+                  <svg class="sorting-icon sorting-up" aria-hidden="true" focusable="hidden" width="11" height="10">
                     <use href="img/icons-sprite.svg#sort"></use>
                   </svg>
               </label>
@@ -341,8 +347,8 @@
                 <span class="visually-hidden">
                   Отсортировать от большего к меньшему
                 </span>
-                <input class="visually-hidden" id="sorting-button-down" type="radio" value="down" name="sorting-buttons">
-                <svg class="sorting-down" aria-hidden="true" focusable="hidden" width="11" height="10">
+                <input class="visually-hidden sorting-buttons-input" id="sorting-button-down" type="radio" value="down" name="sorting-buttons">
+                <svg class="sorting-icon sorting-down" aria-hidden="true" focusable="hidden" width="11" height="10">
                   <use href="img/icons-sprite.svg#sort"></use>
                 </svg>
               </label>
