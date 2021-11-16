@@ -2233,15 +2233,15 @@ body{
 .pagination-navigation{
   background-color: #EBEBEB;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin-top: 51px;
 }
 
 .pagination-list{
   display: flex;
-  justify-content: flex-start;
   align-items: center;
+  width: max-content;
+  flex-wrap: wrap;
 }
 
 .pagination-link{
@@ -2252,10 +2252,12 @@ body{
   color: #000000;
   text-decoration: none;
   padding: 8px 16px 11px 15px;
+  margin-left: -15px;
+  margin-right: -16px;
 }
 
-.pagination-item:not(:last-child) {
-  margin-right: 28px;
+.pagination-item:not(:first-child){
+  margin-left: 28px;
 }
 
 .pagination-link:hover{
@@ -2273,6 +2275,12 @@ body{
 .pagination-next{
   padding: 29px;
   padding-bottom: 24px;
+}
+.pagination-back{
+  margin-right: 189px;
+}
+.pagination-next{
+  margin-left: auto;
 }
 .pagination-back:hover,
 .pagination-next:hover{
