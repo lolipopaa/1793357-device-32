@@ -129,16 +129,9 @@ body{
 
 .search-form{
   display: flex;
-  box-shadow: 0 0 0 2px transparent;
-  border-radius: 25px;
   align-self: center;
-  border: 2px solid transparent;
-  box-shadow: 0 0 0 2px transparent;
-  padding: 10px 0 10px 16px;
-  margin: -10px 0 -10px -16px;
   position: relative;
-  padding-left: 50px;
-}
+ }
 
 .search-form::before{
  content: "";
@@ -147,17 +140,22 @@ body{
  margin-right: 20px;
  width: 16px;
  height: 16px;
- top: 12px;
- left: 14px;
+ top: -7px;
+ left: -2px;
  background: url(../img/search.svg) no-repeat center;
 }
 
 .search{
   font-family: inherit;
-  width: 100%;
   opacity: 0.3;
   font-size: 16px;
   border-radius: 25px;
+  padding: 10px 165px 10px 50px;
+  margin: -10px 0 -10px -20px;
+  position: absolute;
+  top: -9px;
+  width: 518px;
+  box-shadow:  0 0 0 2px transparent;
 }
 
 .search-button{
@@ -167,13 +165,22 @@ body{
   padding-bottom: 10px;
   margin-top: -10px;
   margin-bottom: -10px;
-  box-shadow: 0 0 0 2px #000000;
+  border: 2px solid #000000;
   border-radius: 0px 20px 20px 0px;
   cursor: pointer;
+  margin-left: auto;
+  z-index: 1;
+  height: 43px;
 }
 
 .search:not(:placeholder-shown) + .search-button{
   display: block;
+}
+
+.search:not(:placeholder-shown){
+  opacity: 1;
+  box-shadow: 0 0 0 2px #000000;
+  top: 2px;
 }
 
 .search:hover{
@@ -183,25 +190,22 @@ body{
   background-color: #000000;
   color: #FFFFFF;
 }
-.search-form:focus-within{
-  outline: none;
-  border: 2px solid #AF4FFF;
-}
 .search:focus{
   outline: none;
   opacity: 1;
+  box-shadow:  0 0 0 2px #AF4FFF;
 }
 .search-button:focus{
-  box-shadow: 0 0 0 2px #AF4FFF;
+  border: 2px solid #AF4FFF;
   background-color: none;
   color: inherit;
   outline: none;
 }
-.search-form:focus-within .search-button:hover{
+.search:focus .search-button:hover{
   color: #FFFFFF;
 }
-.search-form:active{
-  border: solid 2px #000000;
+.search:active{
+  box-shadow:  0 0 0 2px #000000;
   opacity: 1;
 }
 .search-button:active{
@@ -1518,6 +1522,7 @@ body{
   font-weight: 700;
   line-height: 20px;
   color: #000000;
+  margin-top: 20px;
 }
 
 .delivery-group{
@@ -1566,6 +1571,10 @@ body{
   opacity: 0.3;
 }
 
+.input-info-email:not(.selected){
+  display: none;
+}
+
 .modal-inputs:hover{
   background-color: #EBEBEB;
 }
@@ -1584,32 +1593,23 @@ body{
   background-color: #FFFFFF;
   outline: none;
 }
-
-.input-info-name::before{
-  content: "Пожалуйста, представьтесь";
-  font-size: 14px;
-  color: #000000;
-}
-
-.input-info-email::before{
-  content: "Забавный у вас адрес";
-  font-size: 14px;
-}
-
-.delivery-email-input:active + .input-info-email::before{
-  content: "Подпись под полем для ввода";
-}
-.modal-inputs:invalid + .input-info-email::before{
-  content: "Подпись под полем для ввода";
+.delivery-name-input:empty + .input-info-name,
+.delivery-name-input:empty + .input-info-email{
   color: #FF3D3D;
 }
-.delivery-name-input:empty + .input-info-name::before{
+.delivery-name-input:invalid + .input-info-name,
+.delivery-name-input:invalid + .input-info-email{
   color: #FF3D3D;
+}
+
+.input-info-name,
+.input-info-email{
+  font-size: 14px;
 }
 
 .delivery-number-container{
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .delivery-info-number{
@@ -1789,14 +1789,16 @@ body{
 
 .filter-headline{
   width: 328px;
-  margin-left: auto;
-  margin-right: auto;
   padding: 25px 32px 25px 60px;
 }
 
 .filter-container{
   width: 328px;
-  padding: 69px 68px 77px 60px;
+  padding: 69px 68px 77px 58px;
+}
+
+.filters-input{
+  margin-bottom: 57px;
 }
 
 .range{
@@ -1812,76 +1814,85 @@ body{
 }
 
 .range-bar{
-   position: absolute;
-   height: 2px;
-   background-color: #000000;
- }
-
-
-.max-price-container{
   position: absolute;
-  right: -32px;
-  top: -8px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  height: 2px;
+  background-color: #000000;
+ }
 
 .min-price-container{
   position: absolute;
-  right: 89px;
+  right: -28px;
+  top: -8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.max-price-container{
+  position: absolute;
+  right: -73px;
   top: -8px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-}
-
-.range-toggle{
-  width: 18px;
-  height: 18px;
-  border: 2px solid #000000;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.range-toggle:focus{
-  border: 2px solid #AF4FFF;
-  outline: none;
-}
-.range-toggle:active{
-  background-color: #000000;
-  border: 2px solid #000000;
 }
 
 .catalog-filter-label{
   display: flex;
   font-size: 15px;
-  opacity: 0.3;
 }
 
 .range-input{
-  width: 30px;
-  padding: 0 2px;
-  font:inherit;
-  text-align: center;
-  background-color: transparent;
-  border: none;
+  height: 18px;
+  width: 18px;
+  background-color: #EBEBEB;
   appearance: textfield;
+  -webkit-appearance: none;
+  background: transparent;
 }
 
 .range-input::-webkit-outer-spin-button,
-.range-input::-webkit-inner-spin-button {
+.range-input::-webkit-inner-spin-button{
   appearance: none;
   margin: 0;
 }
-
+.range-input::-ms-track{
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.range-input::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  border: 2px solid #000000;
+  height: 18px;
+  width: 18px;
+  border-radius: 25px;
+  background-color: #EBEBEB;
+  cursor: pointer;
+}
+.range-input::-moz-range-thumb{
+  border: 2px solid #000000;
+  height: 18px;
+  width: 18px;
+  border-radius: 25px;
+  background: #ffffff;
+  cursor: pointer;
+}
+.range-input::-ms-thumb{
+  border: 2px solid #000000;
+  height: 18px;
+  width: 18px;
+  border-radius: 25px;
+  background: #ffffff;
+  cursor: pointer;
+}
 
 
 .color{
   margin-top: 27px;
 }
-
 
 .filter-legend::before{
   content: "";
@@ -1939,6 +1950,8 @@ body{
 }
 .color-input:focus + .filter-items::before{
   border: 2px #AF4FFF solid;
+}
+.color-input:checked:focus + .filter-items::before{
   background: url('../img/tick-purple.svg') center no-repeat;
 }
 .checked + .filter-items::before{
@@ -1990,7 +2003,7 @@ body{
 }
 
 .bluetooth-label:hover{
-  opacity: 0.2;
+  opacity: 0.5;
 }
 .bluetooth-input:focus + .bluetooth-mark{
   border: 2px solid #AF4FFF;
@@ -2032,7 +2045,6 @@ body{
 }
 
 .sorting{
-  width: 832px;
   height: 70px;
   padding-left: 72px;
   display: flex;
