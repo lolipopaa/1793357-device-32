@@ -131,17 +131,13 @@ body{
   display: flex;
   align-self: center;
   position: relative;
+  align-items: center;
  }
 
-.search-form::before{
- content: "";
- display: block;
- position: absolute;
+.search-icon{
  margin-right: 20px;
  width: 16px;
  height: 16px;
- top: -7px;
- left: -2px;
  background: url(../img/search.svg) no-repeat center;
 }
 
@@ -150,10 +146,10 @@ body{
   opacity: 0.3;
   font-size: 16px;
   border-radius: 25px;
-  padding: 10px 165px 10px 50px;
+  padding: 10px 165px 10px 56px;
   margin: -10px 0 -10px -20px;
   position: absolute;
-  top: -9px;
+  top: -1px;
   width: 518px;
   box-shadow:  0 0 0 2px transparent;
 }
@@ -515,6 +511,7 @@ body{
   display:flex;
   justify-content: flex-start;
   align-items: flex-end;
+  flex-wrap: wrap;
 }
 
 .navigation-item:last-child {
@@ -770,9 +767,9 @@ body{
 }
 
 .catalog-list{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 40px;
 }
 
 .catalog-item{
@@ -1388,6 +1385,7 @@ body{
   justify-self: stretch;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin-top: 25px;
 }
 

@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/fav-icon.png">
     <link rel="stylesheet" href="css/styles.css">
   </head>
 
@@ -13,7 +14,7 @@
       </a>
 
       <nav class="navigation">
-        <form class="search-form">
+        <form class="search-form" method="get">
           <input class="reset-input search" type="search" placeholder="Поиск по сайту">
           <button class="reset-input search-button" type="submit">
             Найти
@@ -99,7 +100,7 @@
               <a class="navigation-link catalog-link" href="#subcatalog">
                 Каталог товаров
               </a>
-              <div class="subcatalog-container">
+              <div class="subcatalog-container" id="subcatalog">
                 <ul class="subcatalog reset-list" id="subcatalog">
                   <li class="subcatalog-item">
                     <a class="subcatalog-headlines subcatalog-vr" href="#">
@@ -311,7 +312,7 @@
             <h3 class="catalog-headline">
               Сортировка:
             </h3>
-            <form class="sorting-value">
+            <form class="sorting-value" method="get">
                 <select class="sorting-list reset-input">
                     <option value="popular">
                         Сначала популярные
@@ -330,7 +331,7 @@
             </form>
 
 
-            <form class="sorting-buttons">
+            <form class="sorting-buttons" method="get">
                <label class="sorting-label">
                   <span class="visually-hidden">
                    Отсортировать от меньшего к большему
