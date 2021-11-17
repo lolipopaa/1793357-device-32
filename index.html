@@ -2,8 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="img/fav-icon.png">
+    <title>
+      HTML Academy: Девайс
+    </title>
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="img/favicon.ico">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
@@ -13,9 +15,9 @@
         </a>
 
         <nav class="navigation">
-            <form class="search-form" method="get">
+            <form class="search-form" method="get" action="https://echo.htmlacademy.ru/">
               <label class="search-icon"></label>
-              <input class="reset-input search" type="search" placeholder="Поиск по сайту">
+              <input class="reset-input search" type="search" placeholder="Поиск по сайту" required>
               <button class="reset-input search-button" type="submit">
                 Найти
               </button>
@@ -23,14 +25,14 @@
 
               <div class="right-items-navigation">
                   <a class="navigation-user-link login-link" href="#">
-                    <svg class="navigation-icon login-icon" aria-hidden="true" focusable="hidden" width="16" height="14" >
+                    <svg class="navigation-icon login-icon" aria-hidden="true" width="16" height="14" >
                       <use href="img/icons-sprite.svg#login"></use>
                     </svg>
                     Войти
                   </a>
 
                 <a class="navigation-user-link compare-link" href="#">
-                  <svg class="navigation-icon compare-icon" aria-hidden="true" focusable="hidden" width="16" height="14" >
+                  <svg class="navigation-icon compare-icon" aria-hidden="true"  width="16" height="14" >
                     <use href="img/icons-sprite.svg#compare"></use>
                   </svg>
                     Сравнить
@@ -38,7 +40,7 @@
 
                 <div class="login-container">
                   <a class="navigation-user-link shopping-cart reset-input" href="#cart">
-                    <svg class="navigation-icon shopping-icon" aria-hidden="true" focusable="hidden" width="16" height="14" >
+                    <svg class="navigation-icon shopping-icon" aria-hidden="true"   width="16" height="14" >
                       <use href="img/icons-sprite.svg#cart"></use>
                     </svg>
                       Корзина
@@ -51,8 +53,8 @@
                           <p class="item-name">
                             Любительская селфи-палка
                           </p>
-                          <button class="delete-button reset-input">
-                            <svg class="delete-item-icon" aria-hidden="true" focusable="hidden" width="11" height="11" fill="#FFFFFF">
+                          <button class="delete-button reset-input" type="button">
+                            <svg class="delete-item-icon" aria-hidden="true"   width="11" height="11" fill="#FFFFFF">
                               <use href="img/icons-sprite.svg#catalog-plus"></use>
                             </svg>
                           </button>
@@ -62,8 +64,8 @@
                           <p class="item-name">
                             Профессиональная селфи-палка
                           </p>
-                          <button class="delete-button reset-input">
-                            <svg class="delete-item-icon" aria-hidden="true" focusable="hidden" width="11" height="11" fill="#FFFFFF">
+                          <button class="delete-button reset-input" type="button">
+                            <svg class="delete-item-icon" aria-hidden="true"   width="11" height="11" fill="#FFFFFF">
                               <use href="img/icons-sprite.svg#catalog-plus"></use>
                             </svg>
                             <span class="visually-hidden">
@@ -153,11 +155,15 @@
     </header>
 
     <main class="main-container">
-        <h1 class="visually-hidden">Интернет магазин "Device".</h1>
+        <h1 class="visually-hidden">
+          Интернет магазин "Device".
+        </h1>
 
         <div class="slider container">
           <div class="slider-container">
-           <h2 class="visually-hidden">Наши предложения.</h2>
+           <h2 class="visually-hidden">
+             Наши предложения.
+            </h2>
 
             <article class="slide selected-slide">
                 <img class="slide-image" src="img/slider-1.png" width="560" height="560" alt="Квадрокоптер.">
@@ -179,12 +185,20 @@
 
               <table class="offers-description">
                   <tr>
-                      <td class="offers-quality">800 м</td>
-                      <td class="offers-quality a">50 м</td>
+                      <td class="offers-quality">
+                        800 м
+                      </td>
+                      <td class="offers-quality a">
+                        50 м
+                      </td>
                   </tr>
                   <tr>
-                    <td class="offers-characteristic">Дальность полета</td>
-                    <td class="offers-characteristic b">Радиус поражения</td>
+                    <td class="offers-characteristic">
+                      Дальность полета
+                    </td>
+                    <td class="offers-characteristic b">
+                      Радиус поражения
+                    </td>
                   </tr>
               </table>
               </div>
@@ -194,8 +208,12 @@
               <img class="slide-image" src="img/slider-2.png" width="560" height="560" alt="Фитнес-браслет.">
               <div class="slider-description slider-2">
                 <div class="slide-info">
-                <h4 class="slider-tagline">Худеем правильно!</h4>
-                <p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+                <h4 class="slider-tagline">
+                  Худеем правильно!
+                </h4>
+                <p class="slider-text">
+                  Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
+                </p>
                 </div>
 
                 <div class="slider-more">
@@ -206,10 +224,14 @@
 
                 <table class="offers-description">
                   <tr>
-                      <td class="offers-quality">48 часов</td>
+                      <td class="offers-quality">
+                        48 часов
+                      </td>
                   </tr>
                   <tr>
-                    <td class="offers-characteristic">Без подзарядки</td>
+                    <td class="offers-characteristic">
+                      Без подзарядки
+                    </td>
                   </tr>
               </table>
             </div>
@@ -219,7 +241,9 @@
               <img class="slide-image" src="img/slider-3.png" width="560" height="560" alt="Селфи палка">
               <div class="slider-description slider-3">
               <div class="slide-info">
-              <h4 class="slider-tagline">Делай селфи, как Бен Стиллер! </h4>
+              <h4 class="slider-tagline">
+                Делай селфи, как Бен Стиллер!
+              </h4>
               <p class="slider-text">
                 Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
               </p>
@@ -233,14 +257,26 @@
 
               <table class="offers-description">
                 <tr>
-                    <td class="offers-quality">8,5 м</td>
-                    <td class="offers-quality">5 кг</td>
-                    <td class="offers-quality">Карбон</td>
+                    <td class="offers-quality">
+                      8,5 м
+                    </td>
+                    <td class="offers-quality">
+                      5 кг
+                    </td>
+                    <td class="offers-quality">
+                      Карбон
+                    </td>
                 </tr>
                 <tr class="offers-description-right">
-                  <td class="offers-characteristic">Длина палки</td>
-                  <td class="offers-characteristic">Вес палки</td>
-                  <td class="offers-characteristic">Материал</td>
+                  <td class="offers-characteristic">
+                    Длина палки
+                  </td>
+                  <td class="offers-characteristic">
+                    Вес палки
+                  </td>
+                  <td class="offers-characteristic">
+                    Материал
+                  </td>
                 </tr>
             </table>
           </div>
@@ -248,24 +284,24 @@
           </div>
 
           <div class="slider-navigation">
-            <button class="slider-button reset-input slider-button-prev" type="button" area-label="Следующее предложение.">
+            <button class="slider-button reset-input slider-button-prev" type="button" aria-label="Следующее предложение.">
             </button>
 
-            <button class="slider-button reset-input slider-button-next" type="button" area-label="Предыдущее предложение.">
+            <button class="slider-button reset-input slider-button-next" type="button" aria-label="Предыдущее предложение.">
             </button>
           </div>
 
             <ol class="slider-pagination reset-list">
               <li>
-                <button class="slider-dot reset-input current-slide" type="button" area-label="Первое предложение.">
+                <button class="slider-dot reset-input current-slide" type="button" aria-label="Первое предложение.">
                 </button>
               </li>
               <li>
-                <button class="slider-dot reset-input" type="button" area-label="Второе предложение.">
+                <button class="slider-dot reset-input" type="button" aria-label="Второе предложение.">
                 </button>
               </li>
               <li>
-                <button class="slider-dot reset-input" type="button" area-label="Третье предложение.">
+                <button class="slider-dot reset-input" type="button" aria-label="Третье предложение.">
                 </button>
               </li>
             </ol>
@@ -311,7 +347,9 @@
 
         <div class="services-container-background">
         <section class="services container">
-         <h2 class="visually-hidden">Услуги.</h2>
+          <h2 class="visually-hidden">
+            Услуги.
+          </h2>
 
         <div class="services-container">
         <nav class="services-navigation">
@@ -335,7 +373,9 @@
 
         <div class="services-info-all">
         <div class="services-info selected delivery-icon">
-          <h3 class="headlines services-headline">Доставка</h3>
+          <h3 class="headlines services-headline">
+            Доставка
+          </h3>
                 <p class="services-description">
                   Мы с удовольствием доставим ваш товар прямо<br>
                     к вашему подъезду совершенно бесплатно! Ведь<br>
@@ -344,7 +384,9 @@
         </div>
 
         <div class="services-info visually-hidden  warranty-icon">
-          <h3 class="headlines services-headline">Гарантия</h3>
+          <h3 class="headlines services-headline">
+            Гарантия
+          </h3>
                 <p class="services-description">
                   Если из-за возгорания купленного у нас товара у вас
                     сгорит дом — не переживайте, мы выдадим вам новый.
@@ -353,7 +395,9 @@
         </div>
 
         <div class="services-info visually-hidden credit-icon">
-          <h3 class="headlines services-headline">Кредит</h3>
+          <h3 class="headlines services-headline">
+            Кредит
+          </h3>
           <p class="services-description">
             Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита.
               Выгодные для банка, разумеется.
@@ -367,16 +411,25 @@
         <section class="delivery container">
             <a class="delivery-link" href="#modal">
               Доставим редкий товар под заказ
+              <svg class="delivery-i" aria-hidden="true"   width="2" height="12">
+                <use href="img/icons-sprite.svg#delivery-i"></use>
+              </svg>
             </a>
         </section>
 
         <div class="info container">
         <section class="about-us">
-            <h2 class="headlines headline-info">О нас</h2>
+            <h2 class="headlines headline-info">
+              О нас
+            </h2>
 
             <div class="about-us-information">
-              <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-              <p class="about-info-p">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+              <p>
+                Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+              </p>
+              <p class="about-info-p">
+                Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:
+              </p>
             </div>
 
             <ul class="delivery-list reset-list">
@@ -399,23 +452,35 @@
         </section>
 
         <section class="contacts">
-            <h2 class="headlines headline-info">Контакты</h2>
+            <h2 class="headlines headline-info">
+              Контакты
+            </h2>
 
-            <p class="contacts-info">Вы можете забрать товар сами, заехав в наш офис. <br>
-            Заодно сможете проверить работоспособность покупки. </p>
+            <p class="contacts-info">
+              Вы можете забрать товар сами, заехав в наш офис. <br>
+              Заодно сможете проверить работоспособность покупки.
+            </p>
 
-            <h3 class="contacts-headline">Интернет-магазин «Девайс»</h3>
+            <h3 class="contacts-headline">
+              Интернет-магазин «Девайс»
+            </h3>
             <address class="contacts-address">
-                <p class="contacts-info-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+                <p class="contacts-info-address">
+                  Санкт-Петербург, набережная реки Карповки, 5, литера П.
+                </p>
                 <a class="contacts-info tel" href="tel:+78128121212">
                     +7 (812) 812-12-12
                 </a>
             </address>
 
-            <h3 class="contacts-headline">Время работы</h3>
+            <h3 class="contacts-headline">
+              Время работы
+            </h3>
 
-            <p class="working-hours">пн—пт: с 10:00 до 22:00<br>
-                сб—вс: с 10:00 до 19:00</p>
+            <p class="working-hours">
+              пн—пт: с 10:00 до 22:00<br>
+              сб—вс: с 10:00 до 19:00
+            </p>
 
             <div class="write-button">
               <a class="buttons button-large" href="#">
@@ -433,8 +498,9 @@
               на рассылку
             </h2>
 
-            <p class="subscribe-info"> Еженедельный дайджест с обзорами новинок,<br>
-                длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
+            <p class="subscribe-info">
+              Еженедельный дайджест с обзорами новинок,<br>
+              длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
             </p>
 
                 <input class="subscribe-email reset-input" type="email" name="subscribe-email" placeholder="Ваш e-mail" required>
@@ -453,8 +519,9 @@
                 <img src="img/logo-footer.svg" width="145" height="36" alt="Логотип магазина Девайс.">
             </a>
 
-              <address class="address-footer">Санкт-Петербург, набережная<br>
-                      реки Карповки, 5, литера П.
+              <address class="address-footer">
+                Санкт-Петербург, набережная<br>
+                реки Карповки, 5, литера П.
               </address>
 
               <nav class="navigation-footer">
@@ -482,11 +549,13 @@
               </a>
 
 
-           <h2 class="visually-hidden">Мы в социальных сетях.</h2>
+           <h2 class="visually-hidden">
+             Мы в социальных сетях.
+          </h2>
             <ul class="social-media-list reset-list">
                 <li class="social-media-item">
                     <a class="social-media-links" href="https://www.facebook.com/htmlacademy" target="_blank">
-                      <svg class="social-icons facebook-icon" aria-hidden="true" focusable="hidden" width="9" height="18" >
+                      <svg class="social-icons facebook-icon" aria-hidden="true"   width="9" height="18" >
                         <use href="img/icons-sprite.svg#facebook"></use>
                       </svg>
                       <span class="visually-hidden">
@@ -496,7 +565,7 @@
                 </li>
                 <li class="social-media-item">
                     <a class="social-media-links" href="https://www.instagram.com/htmlacademy" target="_blank">
-                      <svg class=" social-icons instagram-icon" aria-hidden="true" focusable="hidden" width="16" height="16" >
+                      <svg class=" social-icons instagram-icon" aria-hidden="true"   width="16" height="16" >
                         <use href="img/icons-sprite.svg#instagram"></use>
                       </svg>
                       <span class="visually-hidden">
@@ -506,7 +575,7 @@
                 </li>
                 <li class="social-media-item">
                     <a class="social-media-links" href="https://twitter.com/htmlacademy_ru" target="_blank">
-                      <svg class="social-icons twitter-icon" aria-hidden="true" focusable="hidden" width="15" height="14" >
+                      <svg class="social-icons twitter-icon" aria-hidden="true"   width="15" height="14" >
                         <use href="img/icons-sprite.svg#twitter"></use>
                       </svg>
                       <span class="visually-hidden">
@@ -517,7 +586,7 @@
             </ul>
 
           <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-              <svg class="html-icon" aria-hidden="true" focusable="hidden" width="115" height="33" fill="#FFC700">
+              <svg class="html-icon" aria-hidden="true"   width="115" height="33" fill="#FFC700">
                 <use href="img/icons-sprite.svg#html-icon"></use>
               </svg>
             <span class="visually-hidden">
@@ -534,27 +603,27 @@
           Доставка под заказ
         </h2>
 
-        <button class="modal-close-button reset-input">
-          <svg class="close-button" aria-hidden="true" focusable="hidden" width="11" height="11" fill="#000000">
+        <a class="modal-close-button reset-input" href="#">
+          <svg class="close-button" aria-hidden="true"   width="11" height="11" fill="#000000">
             <use href="img/icons-sprite.svg#catalog-plus"></use>
           </svg>
           <span class="visually-hidden">
             Закрыть
           </span>
-        </button>
+        </a>
 
-        <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
-
+        <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="Post">
+          <div class="delivery-form-container">
           <div class="delivery-group delivery-name">
             <label class="delivery-label" for="delivery-name">
               Ваше имя:
             </label>
             <div class="delivery-input-container name-container">
-              <input class="reset-input modal-inputs delivery-name-input" type="text" id="delivery-name" name="delivery-name" placeholder="Имя Фамилия">
-              <span class="input-info-name">
+              <input class="reset-input modal-inputs delivery-name-input modal-input-error" type="text" id="delivery-name" name="delivery-name" placeholder="Имя Фамилия" required>
+              <span class="input-info">
                 Пожалуйста, представьтесь
               </span>
-              <svg class="delivery-input-icon" aria-hidden="true" focusable="hidden" width="16" height="14">
+              <svg class="delivery-input-icon" aria-hidden="true"   width="16" height="14">
                 <use href="img/icons-sprite.svg#login"></use>
               </svg>
             </div>
@@ -565,14 +634,11 @@
               Ваш e-mail:
             </label>
             <div class="delivery-input-container">
-              <input class="reset-input modal-inputs delivery-email-input" type="email" id="delivery-email" name="delivery-email" value="krasotka92@mail.ru" placeholder="Введите e-mail" required>
-              <span class="input-info-email selected">
+              <input class="reset-input modal-inputs delivery-email-input modal-input-valid" type="email" id="delivery-email" name="delivery-email" placeholder="Введите e-mail" required>
+              <span class="input-info">
                 Забавный у вас адрес
               </span>
-              <span class="input-info-email">
-                Подпись под полем для ввода
-              </span>
-              <svg class="delivery-input-icon" aria-hidden="true" focusable="hidden" width="15" height="12">
+              <svg class="delivery-input-icon" aria-hidden="true"   width="15" height="12">
                 <use href="img/icons-sprite.svg#delivery-email"></use>
               </svg>
             </div>
@@ -587,7 +653,7 @@
 
           <div class="delivery-group delivery-number">
             <span class="delivery-number-container">
-              <label class="delivery-label" for="delivery-number">
+              <label class="delivery-label" for="delivery-total">
                 Количество:
               </label>
               <button class="delivery-info-number" type="button">
@@ -598,32 +664,31 @@
             </span>
 
             <div  class="delivery-group delivery-total-container">
-            <input class="reset-input modal-inputs delivery-total-input" id="delivery-total" type="number" value="1" min="1" step="1">
+            <input class="reset-input modal-inputs delivery-total-input" id="delivery-total" name="number" type="number" value="1" min="1" step="1">
 
             <div class="delivery-button-container">
               <button class="total-button reset-input" type="button">
-                <svg class="minus-delivery-icon" aria-hidden="true" focusable="hidden" width="16" height="16">
+                <svg class="minus-delivery-icon" aria-hidden="true"   width="16" height="16">
                   <use href="img/icons-sprite.svg#catalog-minus"></use>
                 </svg>
               </button>
 
               <button class="total-button reset-input" type="button">
-                <svg class="plus-delivery-icon" aria-hidden="true" focusable="hidden" width="16" height="16">
+                <svg class="plus-delivery-icon" aria-hidden="true"   width="16" height="16">
                   <use href="img/icons-sprite.svg#catalog-plus"></use>
                 </svg>
               </button>
             </div>
             </div>
           </div>
-        </form>
-
+        </div>
 
           <div class="delivery-send">
             <button class="buttons reset-input button-large" type="submit">
               Отправить
             </button>
           </div>
-
+        </form>
       </div>
     </div>
 
