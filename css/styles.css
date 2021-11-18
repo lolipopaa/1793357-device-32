@@ -927,7 +927,24 @@ body {
   width: 160px;
 }
 
-.services-item .buttons {
+.buttons-color {
+  font-family: "Raleway", sans-serif;
+  font-size: inherit;
+  font-weight: 800;
+  line-height: 21px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #000000;
+  padding: 0;
+  background-color: transparent;
+  margin-top: 3px;
+  width: 100%;
+  position: relative;
+  padding-top: 14px;
+  padding-bottom: 16px;
+  display: block;
+  text-align: center;
   z-index: 1;
   padding-top: 9px;
   padding-bottom: 11px;
@@ -941,20 +958,31 @@ body {
 .services-list .selected {
   width: 100%;
   background-color: #000000;
+  color: #ffffff;
 }
 
-.selected .buttons {
+.selected .buttons-color {
   padding-right: 120px;
-  color: rgba(255, 225, 127, 1);
+  color: #ffc700;
 }
 
-.services-item .buttons::before {
+.buttons-color::before {
+  content: "";
   background-color: #ffc700;
+  display: block;
+  height: 8px;
+  width: 100%;
+  z-index: -1;
+  top: 20px;
+  position: absolute;
+}
+
+.services-item .buttons-color::before {
   left: 0;
   top: 16px;
 }
 
-.selected .buttons::before {
+.selected .buttons-color::before {
   background-color: transparent;
 }
 
@@ -962,19 +990,23 @@ body {
   margin-top: 25px;
 }
 
-.services-item:not(.selected) .buttons:hover {
+.buttons-color:hover {
   background-color: #ffc700;
 }
 
-.selected .buttons:hover {
-  background-color: transparent;
+.buttons-color:focus {
+  outline: none;
 }
 
-.services-item .buttons:hover::before {
-  background-color: transparent;
+.buttons-color:focus:before {
+  background-color: #af4fff;
 }
 
-.selected .buttons:focus::before {
+.buttons-color:hover::before {
+  background-color: #ffc700;
+}
+
+.selected .buttons-color:focus::before {
   background-color: transparent;
 }
 
@@ -1300,7 +1332,7 @@ body {
   border-bottom: 3px solid rgba(0, 0, 0, 1);
 }
 
-.subscribe-email:invalid {
+.subscribe-email-error {
   border-bottom: 3px solid #ff3d3d;
 }
 
@@ -2180,29 +2212,15 @@ body {
   opacity: 0.2;
 }
 
-.show-button .buttons {
-  cursor: pointer;
+.show-button .buttons-color {
   z-index: 1;
   padding: 9px 10px 11px 10px;
   margin-top: 36px;
 }
 
-.show-button .buttons::before {
-  background-color: #ffc700;
+.show-button .buttons-color::before {
   top: 21px;
   left: 0;
-}
-
-.show-button .buttons:hover {
-  background-color: #ffc700;
-}
-
-.show-button .buttons:focus::before {
-  background-color: #af4fff;
-}
-
-.show-button .buttons:focus{
-  background-color: transparent;
 }
 
 .sorting-container {
