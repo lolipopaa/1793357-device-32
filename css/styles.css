@@ -206,10 +206,10 @@ body {
   border: 2px solid #af4fff;
   background-color: none;
   color: inherit;
-  outline: none;
+  outline: #000000;
 }
 
-.search:focus .search-button:hover {
+.search-button:hover {
   color: #ffffff;
 }
 
@@ -1304,10 +1304,6 @@ body {
   border-bottom: 3px solid #ff3d3d;
 }
 
-.subscribe-email:empty {
-  border-bottom: 3px solid rgba(0, 0, 0, 0.1);
-}
-
 .subscribe-submit {
   width: 263px;
   border: 3px solid rgba(0, 0, 0, 0.1);
@@ -2203,6 +2199,10 @@ body {
 
 .show-button .buttons:focus::before {
   background-color: #af4fff;
+}
+
+.show-button .buttons:focus{
+  background-color: transparent;
 }
 
 .sorting-container {
