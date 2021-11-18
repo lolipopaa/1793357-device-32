@@ -205,7 +205,7 @@ body {
   border: 2px solid #af4fff;
   background-color: none;
   color: inherit;
-  outline: #000000;
+  outline: none;
 }
 
 .search-button:hover {
