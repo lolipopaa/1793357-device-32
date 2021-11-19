@@ -2271,6 +2271,7 @@ body {
 .sorting-list {
   padding: 4px 15px 7px 13px;
   word-spacing: 2px;
+  max-width: 250px;
 }
 
 .sorting-list:hover {
