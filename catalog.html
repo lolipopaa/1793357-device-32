@@ -25,7 +25,7 @@
         </form>
 
         <div class="right-items-navigation">
-          <a class="navigation-user-link login-link" href="#">
+          <a class="navigation-user-link enter-login-link" href="#">
             <svg class="navigation-icon" aria-hidden="true" width="16" height="14" >
               <use href="img/icons-sprite.svg#login"></use>
             </svg>
@@ -105,8 +105,8 @@
           </a>
           <div class="subcatalog-container" id="subcatalog">
             <ul class="subcatalog reset-list">
-              <li class="subcatalog-item">
-                <a class="subcatalog-headlines subcatalog-vr" href="#">
+              <li class="subcatalog-item subcatalog-vr">
+                <a class="subcatalog-headlines" href="#">
                   Виртуальная реальность
                 </a>
               </li>
@@ -120,6 +120,8 @@
                   Экшн-камеры
                 </a>
               </li>
+            </ul>
+            <ul class="subcatalog reset-list">
               <li class="subcatalog-item subcatalog-bracelet">
                 <a class="subcatalog-headlines" href="#">
                   Фитнес-браслеты
@@ -130,6 +132,8 @@
                   Умные часы
                 </a>
               </li>
+            </ul>
+            <ul class="subcatalog reset-list">
               <li class="subcatalog-item subcatalog-kvadro">
                 <a class="subcatalog-headlines" href="#">
                   Квадрокоптеры
@@ -211,7 +215,7 @@
                               </span>
                               <input class="range-input reset-input" id="price-min" type="range" name="min-price" min="0" step="1" max="10000" value="0" style="width: 150px">
                               <label class="catalog-filter-label" for="price-min">
-                                  от 0
+                                от 0
                               </label>
                             </div>
 
@@ -220,10 +224,10 @@
                                 Изменить максимальную цену.
                               </span>
                                 <input class="range-input reset-input" id="price-max" type="range" name="max-price" min="0" step="1" max="10000" value="5000" style="width: 150px">
-                                <label class="catalog-filter-label" for="price-max">
-                                  до 5000
-                                </label>
                               </div>
+                              <label class="catalog-filter-label" for="price-max">
+                                до 5000
+                              </label>
                           </div>
                         </div>
                       </div>
@@ -306,13 +310,14 @@
                   </fieldset>
 
                   <div class="show-button">
-                    <button class="buttons-color reset-input button-large" type="submit">
+                    <button class="buttons-color reset-input" type="submit">
                         Показать
                     </button>
                   </div>
               </form>
             </div>
         </aside>
+
 
         <div class="catalog-container-right">
           <div class="sorting-container">

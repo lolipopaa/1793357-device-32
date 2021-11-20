@@ -76,10 +76,10 @@
               </ol>
 
               <div class="cart-total">
-                <p>
+                <p class="cart-total-item">
                   Товаров: 2
                 </p>
-                <p>
+                <p class="cart-total-item">
                   Сумма: 2000 ₽
                 </p>
               </div>
@@ -105,7 +105,7 @@
                 </a>
               </li>
               <li class="subcatalog-item subcatalog-monopod">
-                <a class="subcatalog-headlines" href="#">
+                <a class="subcatalog-headlines" href="catalog.html">
                   Моноподы для cелфи
                 </a>
               </li>
@@ -114,6 +114,8 @@
                   Экшн-камеры
                 </a>
               </li>
+            </ul>
+            <ul class="subcatalog reset-list">
               <li class="subcatalog-item subcatalog-bracelet">
                 <a class="subcatalog-headlines" href="#">
                   Фитнес-браслеты
@@ -124,6 +126,8 @@
                   Умные часы
                 </a>
               </li>
+            </ul>
+            <ul class="subcatalog reset-list">
               <li class="subcatalog-item subcatalog-kvadro">
                 <a class="subcatalog-headlines" href="#">
                   Квадрокоптеры
@@ -188,7 +192,7 @@
                       <td class="offers-quality">
                         800 м
                       </td>
-                      <td class="offers-quality a">
+                      <td class="offers-quality">
                         50 м
                       </td>
                   </tr>
@@ -196,7 +200,7 @@
                     <td class="offers-characteristic">
                       Дальность полета
                     </td>
-                    <td class="offers-characteristic b">
+                    <td class="offers-characteristic">
                       Радиус поражения
                     </td>
                   </tr>
@@ -217,7 +221,7 @@
               </div>
 
               <div class="slider-more">
-                <a class="buttons button-large" href="#">
+                <a class="buttons" href="#">
                   Подробнее
                 </a>
               </div>
@@ -250,7 +254,7 @@
               </div>
 
             <div class="slider-more">
-              <a class="buttons button-large" href="#">
+              <a class="buttons" href="#">
                 Подробнее
               </a>
             </div>
@@ -318,7 +322,7 @@
               </a>
           </li>
           <li class="catalog-item">
-              <a class="menu-links monopod" href="#">
+              <a class="menu-links monopod" href="catalog.html">
                 Моноподы<br> для селфи
               </a>
           </li>
@@ -355,16 +359,16 @@
       <nav class="services-navigation">
         <ul class="services-list reset-list">
             <li class="services-item selected">
-                <button class="buttons-color reset-input button-small" type="button">
+                <button class="buttons-color reset-input" type="button">
                     Доставка
                 </button>
             </li>
             <li class="services-item">
-              <button class="buttons-color reset-input button-small" type="button">
+              <button class="buttons-color reset-input" type="button">
               Гарантия
             </button>
             <li class="services-item">
-              <button class="buttons-color reset-input button-small" type="button">
+              <button class="buttons-color reset-input" type="button">
                     Кредит
               </button>
             </li>
@@ -411,7 +415,7 @@
       <section class="delivery container">
           <a class="delivery-link" href="#modal">
             Доставим редкий товар под заказ
-            <svg class="delivery-i" aria-hidden="true"   width="2" height="12">
+            <svg class="delivery-i" aria-hidden="true" width="2" height="12">
               <use href="img/icons-sprite.svg#delivery-i"></use>
             </svg>
           </a>
@@ -445,7 +449,7 @@
             </ul>
 
             <div class="about-us-button">
-              <a class="buttons button-large" href="#">
+              <a class="buttons" href="#">
                   Подробнее о нас
               </a>
             </div>
@@ -483,7 +487,7 @@
           </p>
 
           <div class="write-button">
-            <a class="buttons button-large" href="#">
+            <a class="buttons" href="#">
                 Напишите нам
             </a>
           </div>
@@ -637,7 +641,9 @@
               Ваш e-mail:
             </label>
             <div class="delivery-input-container">
-              <input class="reset-input modal-inputs delivery-email-input modal-input-valid" type="email" id="delivery-email" name="delivery-email" placeholder="Введите e-mail" required>
+              <input class="reset-input modal-inputs delivery-email-input" type="email" id="delivery-email" name="delivery-email" placeholder="Введите e-mail" required>
+                <!-- При ошибке будет появляться класс "modal-input-error"
+                    Если адрес заполнен корректно, то появляется класс "modal-input-valid"-->
               <span class="input-info">
                 Забавный у вас адрес
               </span>
@@ -671,13 +677,13 @@
 
             <div class="delivery-button-container">
               <button class="total-button reset-input" type="button">
-                <svg class="minus-delivery-icon" aria-hidden="true"   width="16" height="16">
+                <svg class="minus-delivery-icon" aria-hidden="true" width="16" height="16">
                   <use href="img/icons-sprite.svg#catalog-minus"></use>
                 </svg>
               </button>
 
               <button class="total-button reset-input" type="button">
-                <svg class="plus-delivery-icon" aria-hidden="true"   width="16" height="16">
+                <svg class="plus-delivery-icon" aria-hidden="true" width="16" height="16">
                   <use href="img/icons-sprite.svg#catalog-plus"></use>
                 </svg>
               </button>
@@ -687,7 +693,7 @@
         </div>
 
           <div class="delivery-send">
-            <button class="buttons reset-input button-large" type="submit">
+            <button class="buttons reset-input" type="submit">
               Отправить
             </button>
           </div>
