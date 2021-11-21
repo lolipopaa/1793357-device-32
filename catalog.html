@@ -26,7 +26,7 @@
 
         <div class="right-items-navigation">
           <a class="navigation-user-link enter-login-link" href="#">
-            <svg class="navigation-icon" aria-hidden="true" width="16" height="14" >
+            <svg class="navigation-icon" aria-hidden="true" width="13" height="12" >
               <use href="img/icons-sprite.svg#login"></use>
             </svg>
             Коля Петухов
@@ -43,7 +43,7 @@
               Сравнить
           </a>
 
-          <div class="login-container">
+          <div class="shopping-cart-container">
             <a class="navigation-user-link shopping-cart reset-input" href="#cart">
               <svg class="navigation-icon shopping-icon" aria-hidden="true" width="16" height="14" >
                 <use href="img/icons-sprite.svg#cart"></use>
@@ -52,33 +52,37 @@
             </a>
 
           <div id="cart" class="popover">
-                <ol class="reset-list cart-list">
-                  <li class="cart-item">
-                    <img class="item-photo" src="img/product-1.jpg" width="41" height="43" alt="Товар Любительская селфи-палка в корзине.">
-                    <p class="item-name">
-                      Любительская селфи-палка
-                    </p>
-                    <button class="delete-button reset-input">
-                      <svg class="delete-item-icon" aria-hidden="true" width="11" height="11" fill="#FFFFFF">
-                        <use href="img/icons-sprite.svg#catalog-plus"></use>
-                      </svg>
-                    </button>
-                  </li>
-                  <li class="cart-item">
-                    <img class="item-photo" src="img/product-2.jpg" width="41" height="43" alt="Товар Профессиональная селфи-палка в корзине.">
-                    <p class="item-name">
-                      Профессиональная селфи-палка
-                    </p>
-                    <button class="delete-button reset-input">
-                      <svg class="delete-item-icon" aria-hidden="true" width="11" height="11" fill="#FFFFFF">
-                        <use href="img/icons-sprite.svg#catalog-plus"></use>
-                      </svg>
-                      <span class="visually-hidden">
-                        Удалить из корзины
-                      </span>
-                    </button>
-                  </li>
-                </ol>
+            <ol class="reset-list cart-list">
+              <li class="cart-item">
+                <a class="cart-item-link" href="#">
+                  <img class="item-photo" src="img/product-1.jpg" width="41" height="43" alt="Товар Любительская селфи-палка в корзине.">
+                  <p class="item-name">
+                    Любительская селфи-палка
+                  </p>
+                </a>
+                <button class="delete-button reset-input" type="button">
+                  <svg class="delete-item-icon" aria-hidden="true"   width="11" height="11" fill="#FFFFFF">
+                    <use href="img/icons-sprite.svg#catalog-plus"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="cart-item">
+                <a class="cart-item-link" href="#">
+                  <img class="item-photo" src="img/product-2.jpg" width="41" height="43" alt="Товар Профессиональная селфи-палка в корзине.">
+                  <p class="item-name">
+                    Профессиональная селфи-палка
+                  </p>
+                </a>
+                <button class="delete-button reset-input" type="button">
+                  <svg class="delete-item-icon" aria-hidden="true"   width="11" height="11" fill="#FFFFFF">
+                    <use href="img/icons-sprite.svg#catalog-plus"></use>
+                  </svg>
+                  <span class="visually-hidden">
+                    Удалить из корзины
+                  </span>
+                </button>
+              </li>
+            </ol>
 
                 <div class="cart-total">
                 <p>
@@ -175,17 +179,17 @@
 
         <ul class="breadcrumbs reset-list">
             <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="index.html">
+                <a class="breadcrumbs-link" href="index.html" tabindex="0">
                     Главная
                 </a>
             </li>
             <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="catalog.html">
+                <a class="breadcrumbs-link" href="catalog.html" tabindex="0">
                     Каталог товаров
                 </a>
             </li>
             <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="#">
+                <a class="breadcrumbs-link" href="#"  tabindex="0">
                     Моноподы для селфи
                 </a>
             </li>
@@ -200,6 +204,7 @@
             </h3>
           </div>
 
+          <div class="filter-container-background">
             <div class="filter-container">
               <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                   <fieldset class="filters-input reset-input">
@@ -224,10 +229,10 @@
                                 Изменить максимальную цену.
                               </span>
                                 <input class="range-input reset-input" id="price-max" type="range" name="max-price" min="0" step="1" max="10000" value="5000" style="width: 150px">
+                                <label class="catalog-filter-label" for="price-max">
+                                  до 5000
+                                </label>
                               </div>
-                              <label class="catalog-filter-label" for="price-max">
-                                до 5000
-                              </label>
                           </div>
                         </div>
                       </div>
@@ -316,6 +321,7 @@
                   </div>
               </form>
             </div>
+          </div>
         </aside>
 
 
@@ -337,9 +343,6 @@
                           Сначала дорогое
                       </option>
                   </select>
-                  <button class="visually-hidden" type="submit">
-                      Отсортировать
-                  </button>
               </form>
 
 
