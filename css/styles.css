@@ -1309,13 +1309,13 @@ body {
 }
 
 .subscribe {
-  padding-top: 76px;
+  padding-top: 75px;
 }
 
 .subscribe-form {
   display: grid;
   grid-template-columns: 601px 1fr 1fr;
-  row-gap: 35px;
+  row-gap: 39px;
   align-items: end;
 }
 
@@ -1377,7 +1377,7 @@ body {
   align-self: flex-start;
   word-break: break-all;
   margin: 0;
-  padding-top: 18px;
+  padding-top: 15px;
 }
 
 .subscribe-free::before {
