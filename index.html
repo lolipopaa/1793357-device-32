@@ -10,37 +10,37 @@
   </head>
   <body>
     <header class="page-header container">
-      <a  class="logo-header" href="index.html" >
+      <a  class="logo-header" href="index.html" tabindex="0">
         <img src="img/logo.svg" width="145" height="36" alt="Логотип магазина Девайс.">
       </a>
 
       <nav class="navigation">
         <form class="search-form" method="get" action="https://echo.htmlacademy.ru/">
           <label class="search-icon"></label>
-          <input class="reset-input search" name="search" type="search" placeholder="Поиск по сайту"  required>
-          <button class="reset-input search-button" type="submit" >
+          <input class="reset-input search" name="search" type="search" placeholder="Поиск по сайту" tabindex="0" required>
+          <button class="reset-input search-button" type="submit" tabindex="0">
             Найти
           </button>
         </form>
 
         <div class="right-items-navigation">
-          <a class="navigation-user-link login-link" href="#" >
-            <svg class="navigation-icon login-icon" aria-hidden="true" width="16" height="14" >
+          <a class="navigation-user-link login-link" href="#" tabindex="0">
+            <svg class="navigation-icon login-icon" aria-hidden="true" width="16" height="14">
               <use href="img/icons-sprite.svg#login"></use>
             </svg>
             Войти
           </a>
 
-          <a class="navigation-user-link compare-link" href="#" >
-            <svg class="navigation-icon compare-icon" aria-hidden="true"  width="16" height="14" >
+          <a class="navigation-user-link compare-link" href="#" tabindex="0">
+            <svg class="navigation-icon compare-icon" aria-hidden="true" width="16" height="14">
               <use href="img/icons-sprite.svg#compare"></use>
             </svg>
               Сравнить
           </a>
 
           <div class="shopping-cart-container">
-            <a class="navigation-user-link shopping-cart reset-input" href="#cart" >
-              <svg class="navigation-icon shopping-icon" aria-hidden="true"   width="16" height="14" >
+            <a class="navigation-user-link shopping-cart reset-input" href="#cart" tabindex="0">
+              <svg class="navigation-icon shopping-icon" aria-hidden="true" width="16" height="14" >
                 <use href="img/icons-sprite.svg#cart"></use>
               </svg>
                 Корзина
@@ -321,32 +321,32 @@
 
       <ul class="catalog-list reset-list">
           <li class="catalog-item">
-              <a class="menu-links vr" href="#">
+              <a class="menu-links vr" href="#" tabindex="0">
                 Виртуальная реальность
               </a>
           </li>
           <li class="catalog-item">
-              <a class="menu-links monopod" href="catalog.html">
+              <a class="menu-links monopod" href="catalog.html" tabindex="0">
                 Моноподы<br> для селфи
               </a>
           </li>
           <li class="catalog-item">
-              <a class="menu-links actioncamera" href="#">
+              <a class="menu-links actioncamera" href="#" tabindex="0">
                 Экшн-камеры
               </a>
           </li>
           <li class="catalog-item">
-              <a class="menu-links fitbracelet" href="#">
+              <a class="menu-links fitbracelet" href="#" tabindex="0">
                 Фитнес&#8209;браслеты
               </a>
           </li>
           <li class="catalog-item">
-              <a class="menu-links smartwatch" href="#">
+              <a class="menu-links smartwatch" href="#" tabindex="0">
                 Умные часы
               </a>
           </li>
           <li class="catalog-item">
-              <a class="menu-links kvadro" href="#">
+              <a class="menu-links kvadro" href="#" tabindex="1">
                 Квадрокоптеры
               </a>
           </li>
@@ -363,16 +363,16 @@
       <nav class="services-navigation">
         <ul class="services-list reset-list">
             <li class="services-item selected">
-                <button class="buttons-color reset-input" type="button">
+                <button class="buttons-color reset-input" type="button" tabindex="0">
                     Доставка
                 </button>
             </li>
             <li class="services-item">
-              <button class="buttons-color reset-input" type="button">
+              <button class="buttons-color reset-input" type="button" tabindex="0">
               Гарантия
             </button>
             <li class="services-item">
-              <button class="buttons-color reset-input" type="button">
+              <button class="buttons-color reset-input" type="button" tabindex="0">
                     Кредит
               </button>
             </li>
@@ -417,7 +417,7 @@
       </div>
 
       <section class="delivery container">
-          <a class="delivery-link" href="#modal">
+          <a class="delivery-link" href="#modal" tabindex="0">
             Доставим редкий товар под заказ
             <svg class="delivery-i" aria-hidden="true" width="2" height="12">
               <use href="img/icons-sprite.svg#delivery-i"></use>
@@ -453,7 +453,7 @@
             </ul>
 
             <div class="about-us-button">
-              <a class="buttons" href="#">
+              <a class="buttons" href="#" tabindex="0">
                   Подробнее о нас
               </a>
             </div>
@@ -476,7 +476,7 @@
               <p class="contacts-info-address">
                 Санкт-Петербург, набережная реки Карповки, 5, литера П.
               </p>
-              <a class="contacts-info tel" href="tel:+78128121212">
+              <a class="contacts-info tel" href="tel:+78128121212" tabindex="0">
                   +7 (812) 812-12-12
               </a>
           </address>
@@ -491,7 +491,7 @@
           </p>
 
           <div class="write-button">
-            <a class="buttons" href="#">
+            <a class="buttons" href="#" tabindex="0">
                 Напишите нам
             </a>
           </div>
@@ -511,10 +511,10 @@
             длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
           </p>
 
-          <input class="subscribe-email reset-input" type="email" name="subscribe-email" placeholder="Ваш e-mail" required>
+          <input class="subscribe-email reset-input" type="email" name="subscribe-email" placeholder="Ваш e-mail" tabindex="0" required>
               <!-- Чтобы отобразить сообщение об ошибке, нужно добавить класс "subscribe-email-error"  -->
 
-          <input class="buttons subscribe-submit" type="submit" value="Подписаться">
+          <input class="buttons subscribe-submit" type="submit" tabindex="0" value="Подписаться">
           <p class="subscribe-free">
             Это бесплатно
           </p>
@@ -525,7 +525,7 @@
 
     <footer class="page-footer">
       <div class="footer-container container">
-        <a class="footer-logo" href="index.html">
+        <a class="footer-logo" href="index.html" tabindex="0">
             <img src="img/logo-footer.svg" width="145" height="36" alt="Логотип магазина Девайс.">
         </a>
 
@@ -537,24 +537,24 @@
         <nav class="navigation-footer">
         <ul class="footer-navigation-list reset-list">
             <li class="footer-navigation-item">
-              <a class="footer-navigation-link navigation-link" href="#">
+              <a class="footer-navigation-link navigation-link" href="#" tabindex="0">
                 Доставка
               </a>
             </li>
             <li class="footer-navigation-item">
-              <a class="footer-navigation-link navigation-link" href="#">
+              <a class="footer-navigation-link navigation-link" href="#" tabindex="0">
                 Гарантия
                 </a>
             </li>
             <li class="footer-navigation-item">
-              <a class="footer-navigation-link navigation-link" href="#">
+              <a class="footer-navigation-link navigation-link" href="#" tabindex="0">
                 Контакты
               </a>
             </li>
         </ul>
         </nav>
 
-        <a class="footer-tel" href="tel:+78128121212">
+        <a class="footer-tel" href="tel:+78128121212" tabindex="0">
           Тел.: +7 (812) 812-12-12
         </a>
 
@@ -564,7 +564,7 @@
         </h2>
         <ul class="social-media-list reset-list">
             <li class="social-media-item">
-                <a class="social-media-links" href="https://www.facebook.com/htmlacademy" target="_blank">
+                <a class="social-media-links" href="https://www.facebook.com/htmlacademy" target="_blank" tabindex="0">
                   <svg class="social-icons facebook-icon" aria-hidden="true" width="9" height="18" >
                     <use href="img/icons-sprite.svg#facebook"></use>
                   </svg>
@@ -574,7 +574,7 @@
                 </a>
             </li>
             <li class="social-media-item">
-                <a class="social-media-links" href="https://www.instagram.com/htmlacademy" target="_blank">
+                <a class="social-media-links" href="https://www.instagram.com/htmlacademy" target="_blank" tabindex="0">
                   <svg class=" social-icons instagram-icon" aria-hidden="true" width="16" height="16" >
                     <use href="img/icons-sprite.svg#instagram"></use>
                   </svg>
@@ -584,7 +584,7 @@
                 </a>
             </li>
             <li class="social-media-item">
-                <a class="social-media-links" href="https://twitter.com/htmlacademy_ru" target="_blank">
+                <a class="social-media-links" href="https://twitter.com/htmlacademy_ru" target="_blank" tabindex="0">
                   <svg class="social-icons twitter-icon" aria-hidden="true" width="15" height="14" >
                     <use href="img/icons-sprite.svg#twitter"></use>
                   </svg>
@@ -595,7 +595,7 @@
             </li>
         </ul>
 
-        <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+        <a class="htmlacademy-link" href="https://htmlacademy.ru/" tabindex="0">
             <svg class="html-icon" aria-hidden="true" width="115" height="33" fill="#FFC700">
               <use href="img/icons-sprite.svg#html-icon"></use>
             </svg>
@@ -613,7 +613,7 @@
           Доставка под заказ
         </h2>
 
-        <a class="modal-close-button reset-input" href="#">
+        <a class="modal-close-button reset-input" href="#" tabindex="0">
           <svg class="close-button" aria-hidden="true" width="26" height="26" fill="#000000">
             <use href="img/icons-sprite.svg#catalog-plus"></use>
           </svg>
@@ -629,7 +629,7 @@
               Ваше имя:
             </label>
             <div class="delivery-input-container name-container">
-              <input class="reset-input modal-inputs delivery-name-input" type="text" id="delivery-name" name="delivery-name" placeholder="Имя Фамилия" required>
+              <input class="reset-input modal-inputs delivery-name-input" type="text" id="delivery-name" name="delivery-name" placeholder="Имя Фамилия" tabindex="0" required>
                   <!-- При ошибке  будет появляться класс "modal-input-error"  -->
               <span class="input-info">
                 Пожалуйста, представьтесь
@@ -645,7 +645,7 @@
               Ваш e-mail:
             </label>
             <div class="delivery-input-container">
-              <input class="reset-input modal-inputs delivery-email-input" type="email" id="delivery-email" name="delivery-email" placeholder="Введите e-mail" required>
+              <input class="reset-input modal-inputs delivery-email-input" type="email" id="delivery-email" name="delivery-email" placeholder="Введите e-mail" tabindex="0" required>
                 <!-- Чтобы отобразить сообщение об ошибке, нужно добавить класс "modal-input-error"
                     Если адрес заполнен корректно, то нужно добавить класс "modal-input-valid"-->
               <span class="input-info">
@@ -661,7 +661,7 @@
             <label class="delivery-label" for="delivery-goods">
               Что нужно привезти:
             </label>
-            <input class="modal-inputs reset-input" type="text" id="delivery-goods" name="delivery-goods" placeholder="В свободной форме">
+            <input class="modal-inputs reset-input" type="text" id="delivery-goods" name="delivery-goods" placeholder="В свободной форме" tabindex="0">
           </div>
 
           <div class="delivery-group delivery-number">
@@ -677,16 +677,16 @@
             </span>
 
             <div class="delivery-total-container">
-            <input class="reset-input modal-inputs delivery-total-input" id="delivery-total" name="number" type="number" value="1" min="1" step="1">
+            <input class="reset-input modal-inputs delivery-total-input" id="delivery-total" name="number" type="number" value="1" min="1" step="1" tabindex="0">
 
             <div class="delivery-button-container">
-              <button class="total-button reset-input" type="button">
+              <button class="total-button reset-input" type="button" tabindex="0">
                 <svg class="minus-delivery-icon" aria-hidden="true" width="16" height="16">
                   <use href="img/icons-sprite.svg#catalog-minus"></use>
                 </svg>
               </button>
 
-              <button class="total-button reset-input" type="button">
+              <button class="total-button reset-input" type="button" tabindex="0">
                 <svg class="plus-delivery-icon" aria-hidden="true" width="16" height="16">
                   <use href="img/icons-sprite.svg#catalog-plus"></use>
                 </svg>
@@ -697,7 +697,7 @@
         </div>
 
           <div class="delivery-send">
-            <button class="buttons reset-input" type="submit">
+            <button class="buttons reset-input" type="submit" tabindex="0">
               Отправить
             </button>
           </div>
