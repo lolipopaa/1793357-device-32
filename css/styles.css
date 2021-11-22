@@ -1412,20 +1412,20 @@ body {
 }
 
 .footer-navigation-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: end;
-  column-gap: 12px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.footer-navigation-item:last-child {
-  margin-left: 4px;
+.footer-navigation-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .footer-navigation-link {
   padding: 14px 20px 15px 20px;
   border: 2px solid transparent;
   border-radius: 25px;
+  width: 148px;
 }
 
 .footer-navigation-item::after {
