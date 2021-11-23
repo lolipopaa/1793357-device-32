@@ -59,6 +59,9 @@
                     <svg class="delete-item-icon" aria-hidden="true" width="11" height="11" fill="#FFFFFF">
                       <use href="img/icons-sprite.svg#catalog-plus"></use>
                     </svg>
+                    <span class="visually-hidden">
+                      Удалить товар из корзины
+                    </span>
                   </button>
                 </li>
                 <li class="cart-item">
@@ -69,11 +72,11 @@
                     </p>
                   </a>
                   <button class="delete-button reset-input" type="button" >
-                    <svg class="delete-item-icon" aria-hidden="true"   width="11" height="11" fill="#FFFFFF">
+                    <svg class="delete-item-icon" aria-hidden="true" width="11" height="11" fill="#FFFFFF">
                       <use href="img/icons-sprite.svg#catalog-plus"></use>
                     </svg>
                     <span class="visually-hidden">
-                      Удалить из корзины
+                      Удалить товар из корзины
                     </span>
                   </button>
                 </li>
@@ -418,6 +421,9 @@
 
       <section class="delivery container">
           <a class="delivery-link" href="#modal" tabindex="0">
+            <svg class="delivery-truck" aria-hidden="true" width="47" height="31">
+              <use href="img/icons-sprite.svg#delivery-truck"></use>
+            </svg>
             Доставим редкий товар под заказ
             <svg class="delivery-i" aria-hidden="true" width="2" height="12">
               <use href="img/icons-sprite.svg#delivery-i"></use>
@@ -565,7 +571,7 @@
         <ul class="social-media-list reset-list">
             <li class="social-media-item">
                 <a class="social-media-links" href="https://www.facebook.com/htmlacademy" target="_blank" tabindex="0">
-                  <svg class="social-icons facebook-icon" aria-hidden="true" width="9" height="18" >
+                  <svg class="social-icons facebook-icon" aria-hidden="true" width="9" height="18" fill="#444444">
                     <use href="img/icons-sprite.svg#facebook"></use>
                   </svg>
                   <span class="visually-hidden">
@@ -575,7 +581,7 @@
             </li>
             <li class="social-media-item">
                 <a class="social-media-links" href="https://www.instagram.com/htmlacademy" target="_blank" tabindex="0">
-                  <svg class=" social-icons instagram-icon" aria-hidden="true" width="16" height="16" >
+                  <svg class=" social-icons instagram-icon" aria-hidden="true" width="16" height="16" fill="#444444">
                     <use href="img/icons-sprite.svg#instagram"></use>
                   </svg>
                   <span class="visually-hidden">
@@ -585,7 +591,7 @@
             </li>
             <li class="social-media-item">
                 <a class="social-media-links" href="https://twitter.com/htmlacademy_ru" target="_blank" tabindex="0">
-                  <svg class="social-icons twitter-icon" aria-hidden="true" width="15" height="14" >
+                  <svg class="social-icons twitter-icon" aria-hidden="true" width="15" height="14" fill="#444444">
                     <use href="img/icons-sprite.svg#twitter"></use>
                   </svg>
                   <span class="visually-hidden">
@@ -613,14 +619,14 @@
           Доставка под заказ
         </h2>
 
-        <a class="modal-close-button reset-input" href="#" tabindex="0">
+        <button class="modal-close-button reset-input" type="button" tabindex="0">
           <svg class="close-button" aria-hidden="true" width="26" height="26" fill="#000000">
             <use href="img/icons-sprite.svg#catalog-plus"></use>
           </svg>
           <span class="visually-hidden">
             Закрыть
           </span>
-        </a>
+        </button>
 
         <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="Post">
           <div class="delivery-form-container">
@@ -681,12 +687,18 @@
 
             <div class="delivery-button-container">
               <button class="total-button reset-input" type="button" tabindex="0">
+                <span class="visually-hidden">
+                  Уменьшить количество товара
+                </span>
                 <svg class="minus-delivery-icon" aria-hidden="true" width="16" height="16">
                   <use href="img/icons-sprite.svg#catalog-minus"></use>
                 </svg>
               </button>
 
               <button class="total-button reset-input" type="button" tabindex="0">
+                <span class="visually-hidden">
+                  Увеличить количество товара
+                </span>
                 <svg class="plus-delivery-icon" aria-hidden="true" width="16" height="16">
                   <use href="img/icons-sprite.svg#catalog-plus"></use>
                 </svg>

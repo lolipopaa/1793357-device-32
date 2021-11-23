@@ -64,6 +64,9 @@
                   <svg class="delete-item-icon" aria-hidden="true" width="11" height="11" fill="#FFFFFF">
                     <use href="img/icons-sprite.svg#catalog-plus"></use>
                   </svg>
+                  <span class="visually-hidden">
+                    Удалить товар из корзины
+                  </span>
                 </button>
               </li>
               <li class="cart-item">
@@ -346,27 +349,25 @@
               </form>
 
 
-              <form class="sorting-buttons" method="get">
-                <label class="sorting-label">
+              <div class="sorting-buttons-container">
+                  <button class="sorting-button reset-input" type="button">
                     <span class="visually-hidden">
                     Отсортировать от меньшего к большему
                     </span>
-                    <input class="visually-hidden sorting-buttons-input" id="sorting-button-up" type="radio" value="up" name="sorting-buttons" tabindex="0">
                     <svg class="sorting-icon sorting-up" aria-hidden="true" width="11" height="10">
                       <use href="img/icons-sprite.svg#sort"></use>
                     </svg>
-                </label>
+                  </button>
 
-                <label class="sorting-label">
-                  <span class="visually-hidden">
-                    Отсортировать от большего к меньшему
-                  </span>
-                  <input class="visually-hidden sorting-buttons-input" id="sorting-button-down" type="radio" value="down" name="sorting-buttons" tabindex="0" checked>
-                  <svg class="sorting-icon sorting-down" aria-hidden="true" width="11" height="10">
-                    <use href="img/icons-sprite.svg#sort"></use>
-                  </svg>
-                </label>
-              </form>
+                  <button class="sorting-button reset-input checked" type="button">
+                    <span class="visually-hidden">
+                      Отсортировать от большего к меньшему
+                    </span>
+                    <svg class="sorting-icon sorting-down" aria-hidden="true" width="11" height="10">
+                      <use href="img/icons-sprite.svg#sort"></use>
+                    </svg>
+                  </button>
+              </div>
 
           </aside>
           </div>
@@ -547,7 +548,7 @@
         <ul class="social-media-list reset-list">
             <li class="social-media-item">
                 <a class="social-media-links" href="https://www.facebook.com/htmlacademy" target="_blank" tabindex="0">
-                  <svg class="social-icons facebook-icon" aria-hidden="true" width="9" height="18" >
+                  <svg class="social-icons facebook-icon" aria-hidden="true" width="9" height="18" fill="#444444">
                     <use href="img/icons-sprite.svg#facebook"></use>
                   </svg>
                   <span class="visually-hidden">
@@ -557,7 +558,7 @@
             </li>
             <li class="social-media-item">
                 <a class="social-media-links" href="https://www.instagram.com/htmlacademy" target="_blank" tabindex="0">
-                  <svg class=" social-icons instagram-icon" aria-hidden="true" width="16" height="16" >
+                  <svg class=" social-icons instagram-icon" aria-hidden="true" width="16" height="16" fill="#444444">
                     <use href="img/icons-sprite.svg#instagram"></use>
                   </svg>
                   <span class="visually-hidden">
@@ -567,7 +568,7 @@
             </li>
             <li class="social-media-item">
                 <a class="social-media-links" href="https://twitter.com/htmlacademy_ru" target="_blank" tabindex="0">
-                  <svg class="social-icons twitter-icon" aria-hidden="true" width="15" height="14" >
+                  <svg class="social-icons twitter-icon" aria-hidden="true" width="15" height="14" fill="#444444">
                     <use href="img/icons-sprite.svg#twitter"></use>
                   </svg>
                   <span class="visually-hidden">
